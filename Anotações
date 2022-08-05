@@ -1,0 +1,23 @@
+Seção Básica:
+    Comentários:
+        # : Deixa o código comentado.
+        """/''': São docstrings, porém servem como comentário.
+        OBS: Padrão da comunidade, 2 espaços em caso de já existir algum dado
+             na linha.
+    Print:
+        print(): Escreva.
+        print('',''): Por padrão a vírgula representa espaço.
+        print('','', sep='-'): Por padrão a vírgula representa espaço, o sep indica o tipo do separador.
+        print('','', sep='-', end=''): Por padrão a vírgula representa espaço,
+                                       o sep indica o tipo do separador, end='' não quebra linha.
+        Exercicio da aula: Criar um cpf com parâmetos do print.
+        OBS: Em python () ao final de um comando indica uma função em Python.
+        OBS: O python é case sensitive.
+    Strings:
+        str: Tipo primitivo de texto, esse tipo é identificado por aspas.
+        Caractere de escape:
+            \: Com esse caractere a frente a aspa é ignarada como comando.
+            OBS: Não recomendado por que fica estranho, além de que existem outros comandos com \.
+        print(r''): Indica que nada devera ser executado.
+        OBS: O python é uma linguagem de tipagem dinâmica, ou seja, consegue idenficar os tipos.
+        OBS: As aspas podem estar uma dentro da outra desde que sejam diferentes. ("''") ou ('""')
