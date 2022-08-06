@@ -4,6 +4,7 @@ Seção Básica:
         """/''': São docstrings, porém servem como comentário.
         OBS: Padrão da comunidade, 2 espaços em caso de já existir algum dado
              na linha.
+
     Print:
         print(): Escreva.
         print('',''): Por padrão a vírgula representa espaço.
@@ -13,6 +14,7 @@ Seção Básica:
         Exercicio da aula: Criar um cpf com parâmetos do print.
         OBS: Em python () ao final de um comando indica uma função em Python.
         OBS: O python é case sensitive.
+
     Strings:
         str: Tipo primitivo de texto, esse tipo é identificado por aspas.
         Caractere de escape:
@@ -21,3 +23,24 @@ Seção Básica:
         print(r''): Indica que nada devera ser executado.
         OBS: O python é uma linguagem de tipagem dinâmica, ou seja, consegue idenficar os tipos.
         OBS: As aspas podem estar uma dentro da outra desde que sejam diferentes. ("''") ou ('""')
+
+    Tipos Primitivos:
+        str - int - float - bool
+        str: String
+        int: Inteiro
+        float: Real
+        bool: Lógico
+        casting:
+            tipo(valor) isso transforma quando possível um valor de tipo x a y.
+        Função:
+            type(): indica o tipo do dado.
+        OBS: Valores vazios quando castados para bool() são tratados como falso.
+
+    Operadores Aritméticos:
+        [+ , -, *, /, //, **, %, ()]
+        Ordem de preceência:
+            -> | () | ** | * | / | // | % | + | - |
+
+    Variáveis:
+        Regras: Iniciar com letra, pode conter números, separar por _, letras minúsculas.
+        São apelidos dados a nossas regiões de memória.
