@@ -63,3 +63,7 @@ Seção Básica:
             bloco
         else:
             bloco
+
+    Operadores relacionais:
+        == | > | >= | < | <= | !=
+        Permite a comparação de dados sempre retornando um valor boolean.
