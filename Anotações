@@ -48,3 +48,6 @@ Seção Básica:
     Formatação de string:
         f'strings:
             printf(f''{var}) <- melhor maneira de utilizar as strings.
+
+    DESAFIO - Aula 8 dos conteúdos anteriores.
+    --------------------------------------------------------------------------------------------------------------------
