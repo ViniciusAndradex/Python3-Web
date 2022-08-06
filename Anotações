@@ -51,3 +51,15 @@ Seção Básica:
 
     DESAFIO - Aula 8 dos conteúdos anteriores.
     --------------------------------------------------------------------------------------------------------------------
+    Entrada de dados:
+        input('texto que apresentará ao user: ') <- utilizado com variáveis.
+        nome = tipo(input(''))
+
+    Condições:
+        IF, ELIF e ELSE.
+        if condição (True já garante o verdadeiro):
+            bloco
+        elif condição:
+            bloco
+        else:
+            bloco
