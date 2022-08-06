@@ -67,3 +67,10 @@ Seção Básica:
     Operadores relacionais:
         == | > | >= | < | <= | !=
         Permite a comparação de dados sempre retornando um valor boolean.
+
+    Operadores Lógicos:
+        and | or | not | in | not in
+        and(e): V | V -> True
+        or(ou): F | V -> True
+        not: inverte o valor (bool)!
+        OBS: O not também é usada para testes com variáveis vazios já que se não tiver nada retorna True.

@@ -19,7 +19,7 @@ nome = input('Qual seu nome? ')
 idade = int(input('Qual sua idade? '))
 muito_jovem = 20
 muito_velho = 30
-if idade >= muito_jovem and idade <= muito_velho:
+if muito_jovem <= idade <= muito_velho:
     print(f'{nome} pode pegar um empréstimos.')
 else:
     print(f'{nome} não pode pegar empréstimos.')
