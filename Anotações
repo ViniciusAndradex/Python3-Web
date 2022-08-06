@@ -44,3 +44,7 @@ Seção Básica:
     Variáveis:
         Regras: Iniciar com letra, pode conter números, separar por _, letras minúsculas.
         São apelidos dados a nossas regiões de memória.
+
+    Formatação de string:
+        f'strings:
+            printf(f''{var}) <- melhor maneira de utilizar as strings.
