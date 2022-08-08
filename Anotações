@@ -141,7 +141,7 @@ Seção Básica:
             métodos:
                startswith(''): responde se a primeira letra de uma string corresponde a digitada.
 
-     Listas:
+    Listas:
             Variáveis compostas!
             declaração:
                 lista = [] ou list()
@@ -154,7 +154,7 @@ Seção Básica:
                 clear(): limpa toda a lista
                 extend(): a partir de uma lista já criada você consegue extender outra, ou seja, adicionar ao final.
 
-     String metods:
+    String metods:
         Split: Divide strings, de acordo com separador que nós indicamos.
         Join: Junta elementos.
         Enumerate: Enumera elementos iteraveis, é possível também indicar o elemento no qual o enumerate começa.
@@ -163,3 +163,13 @@ Seção Básica:
                 portanto basta duas variáveis receberem o valor.
         count: conta um elemento indicado.
         strip: exclui espaços inuteis.
+
+    Desempacotamento de listas e python:
+        lista[0, 1, 2]
+        n1, n2, n3 = lista <- Da forma que descrevemos cada variável recebe um valor dalista, ou seja,
+                              foram desempacotadas
+        OBS: Em caso de mais valores do que váriavel utilizamos do *qualquer_nome
+            Exemplo:
+                n, m, *qualquer_nome = lista <- Qualquer nome gera uma lista com os valores restantes.
+                OBS: qualquer_nome recebe qualquer valor que não esteja em outra variável, ou seja, se criarmos uma var
+                     após o mesmo o valor é retirado da sua lista e pode ocorrer para qualquer número de var.
