@@ -94,3 +94,15 @@ Seção Básica:
               esse termo o código continua funcionando sem erros.
 
         ...: faz a mesma coisa apesar de não ser comum.
+
+    Formatando valores:
+        Modificadores:
+            :s - texto
+            :d - inteiros
+            :f - float
+            :.(num)f - quantidade de casas decimais, float
+            :caractere (<, > e ^)(quantidade)(tipos - s, d ou f)
+        Função:
+            zfill = preenche com 0 de acordo com tamanho passado.
+            l/rjust(tam, 'caractere') = faz a formatação de acordo com tamanho e caractere.
+            upper() - lower() - title()
