@@ -10,5 +10,5 @@ try:
             print(f'O horário é {num}:00, Boa noite!')
     else:
         raise ValueError
-except:
+except ValueError:
     print('Digite um horário entre 0 | 23')
