@@ -112,3 +112,11 @@ Seção Básica:
             string[ini:fim:passo]
         Funções:
             len() | abs | type | print...
+
+    Laços de repetição:
+        While:
+            while condição:
+                bloco
+        continue: essa palavra reservada pula para o próximo laço impedindo a exibição do bloco e
+                  podemos para para certas coisas.
+        break: encerra o laço.
