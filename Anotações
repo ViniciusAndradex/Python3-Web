@@ -88,3 +88,9 @@ Seção Básica:
             isdecimal()
             isdigit()
         OBS: Quando houver qualquer dúvida, buscar consultar na documentação da função.
+
+    Placeholder e elipisis:
+        pass: Está palavra indica que o programador deixou para escrever o código depois e ao colocar
+              esse termo o código continua funcionando sem erros.
+
+        ...: faz a mesma coisa apesar de não ser comum.
