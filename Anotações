@@ -153,3 +153,13 @@ Seção Básica:
                 del(): exclui o elemento indicado.
                 clear(): limpa toda a lista
                 extend(): a partir de uma lista já criada você consegue extender outra, ou seja, adicionar ao final.
+
+     String metods:
+        Split: Divide strings, de acordo com separador que nós indicamos.
+        Join: Junta elementos.
+        Enumerate: Enumera elementos iteraveis, é possível também indicar o elemento no qual o enumerate começa.
+        --->    Ao utilizar o enumerate nós criamos uma tupla com o valor de enumerate + o valor de minha lista
+                é possível também desempacotar, ou seja, o valor que foi devolvido agora possui dois valores e
+                portanto basta duas variáveis receberem o valor.
+        count: conta um elemento indicado.
+        strip: exclui espaços inuteis.
