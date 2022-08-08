@@ -181,3 +181,6 @@ Seção Básica:
 
     Operador Ternário:
         var = bloco True if condiçãoTrue else bloco False
+
+    Expresões or:
+        print(nome or 'Você não digitou nada')
