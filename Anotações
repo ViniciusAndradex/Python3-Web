@@ -136,7 +136,12 @@ Seção Básica:
             for c in range()/var:  range(start, stop, step)
                 bloco
 
-        Listas:
+        For Else:
+            break | continue
+            métodos:
+               startswith(''): responde se a primeira letra de uma string corresponde a digitada.
+
+     Listas:
             Variáveis compostas!
             declaração:
                 lista = [] ou list()
