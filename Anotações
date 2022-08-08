@@ -178,3 +178,6 @@ Seção Básica:
         x = 10
         y = 15
         y, x = x, y -> Uma especie de desempacotamento.
+
+    Operador Ternário:
+        var = bloco True if condiçãoTrue else bloco False
