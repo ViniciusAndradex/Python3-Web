@@ -106,3 +106,9 @@ Seção Básica:
             zfill = preenche com 0 de acordo com tamanho passado.
             l/rjust(tam, 'caractere') = faz a formatação de acordo com tamanho e caractere.
             upper() - lower() - title()
+        Fatiamento:
+            Todas as strings possuem indices e portanto podemos acessar com os fatiamentos.
+            Os indices podem ser positivos e negativos, os negativos fazem a conta de trás para frente da string.
+            string[ini:fim:passo]
+        Funções:
+            len() | abs | type | print...

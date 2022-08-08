@@ -1,0 +1,15 @@
+texto = 'Python S2'
+
+print(texto[2])
+print(texto[8])
+print(texto[6])
+print(texto[-1])
+print(texto[2:6])
+print(texto[:6])
+print(texto[7:])
+print(texto[-9])
+print(texto[-9:-3])
+print(texto[:-1])
+print(texto[:-2])
+print(texto[0:6:2])
+print(texto[0::3])
