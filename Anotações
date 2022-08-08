@@ -127,3 +127,9 @@ Seção Básica:
                 bloco
             else: # Somente quando o laço se tornar falso.
                 bloco
+
+        iterações com strings (WHILE):
+            iterar: Significa varrer um determinado objeto que possue indices.
+            hardcode = explicitando um dado.
+
+        For in:
