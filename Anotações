@@ -83,4 +83,8 @@ Seção Básica:
         OBS: Não funciona com números.
         OBS: em python tudo é objeto.
 
-    
+    Documentações e funções built-in:
+        funções:
+            isdecimal()
+            isdigit()
+        OBS: Quando houver qualquer dúvida, buscar consultar na documentação da função.
