@@ -6,7 +6,7 @@ try:
             print(f'O horário é {num}:00, Bom dia!')
         elif num <= 17:
             print(f'O horário é {num}:00, Boa tarde!')
-        elif num <= 23:
+        else:
             print(f'O horário é {num}:00, Boa noite!')
     else:
         raise ValueError
