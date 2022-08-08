@@ -173,3 +173,8 @@ Seção Básica:
                 n, m, *qualquer_nome = lista <- Qualquer nome gera uma lista com os valores restantes.
                 OBS: qualquer_nome recebe qualquer valor que não esteja em outra variável, ou seja, se criarmos uma var
                      após o mesmo o valor é retirado da sua lista e pode ocorrer para qualquer número de var.
+
+    Trocando valor de Variáveis:
+        x = 10
+        y = 15
+        y, x = x, y -> Uma especie de desempacotamento.
