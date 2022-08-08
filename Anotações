@@ -74,3 +74,13 @@ Seção Básica:
         or(ou): F | V -> True
         not: inverte o valor (bool)!
         OBS: O not também é usada para testes com variáveis vazios já que se não tiver nada retorna True.
+
+    len:
+        len(): Indica o número de caracteres de uma string.
+        Essa função funciona sobre o pano, ou seja, por ser um função para string podemos chamar também
+        como string.__len__()
+
+        OBS: Não funciona com números.
+        OBS: em python tudo é objeto.
+
+    
