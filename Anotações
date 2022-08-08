@@ -135,3 +135,16 @@ Seção Básica:
         For in:
             for c in range()/var:  range(start, stop, step)
                 bloco
+
+        Listas:
+            Variáveis compostas!
+            declaração:
+                lista = [] ou list()
+            métodos:
+                trocar valor: lista[5] = 'Meu'
+                append(): adc ao final
+                insert(): adc na posição
+                pop(): exclui o ultimo elemento ou posição indicada.
+                del(): exclui o elemento indicado.
+                clear(): limpa toda a lista
+                extend(): a partir de uma lista já criada você consegue extender outra, ou seja, adicionar ao final.
