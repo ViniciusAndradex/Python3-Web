@@ -1,4 +1,4 @@
-num = input('Digite um horário: ')
+num = input('Digite um horário (0-23): ')
 try:
     num = int(num)
     if num <= 23:
