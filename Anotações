@@ -133,3 +133,5 @@ Seção Básica:
             hardcode = explicitando um dado.
 
         For in:
+            for c in range()/var:  range(start, stop, step)
+                bloco
