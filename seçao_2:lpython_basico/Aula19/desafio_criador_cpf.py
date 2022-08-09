@@ -21,4 +21,4 @@ while True:
     c -= 1
     index += 1
 
-print(f'CPG GERADO: {new_cpf}')
+print(f'CPF GERADO: {new_cpf}')
