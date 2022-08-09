@@ -184,3 +184,15 @@ Seção Básica:
 
     Expresões or:
         print(nome or 'Você não digitou nada')
+
+    Funções Parte 1:
+        definição:
+            def nome(parametros)
+
+        Utilizado para evitar repetição de códigos.
+        Parametros:
+            def func(msg, ...):
+        Valores padrões:
+            def func(msg='oi', num=0)
+
+            func(num=5, msg='PICA')
