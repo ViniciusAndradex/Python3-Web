@@ -196,7 +196,17 @@ Seção Básica:
             def func(msg='oi', num=0)
 
             func(num=5, msg='PICA')
+        Funções não são comumente utilizadas para prints.
 
     Funções parte 2 [RETURN]:
         Funções que retornam algo.
-        
+        declaração:
+            def func(var=''):
+                return var -> Ao encontrar retorno está encerrado a minha função!
+                return 'A', 'B' -> Esse tipo de dado retorna uma tupla, listas imutaveis.
+        OBS: As funções podem retornar uma a outra sendo que é possível retornar o próprio valor e
+             a função em si. Isso implica dizer que um variável que recebe esse valor pode se tornar
+             a propria variavel com seus parâmetros e retornos pois estão ligadas em relação ao endereço
+             na memória.
+        OBS: Se não colocar os parenteses o retorno de uma função é simplesmente ela mesma com um type function.
+        OBS: none, significa não valor podemos utilizar como false em if's.
