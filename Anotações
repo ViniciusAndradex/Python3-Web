@@ -210,3 +210,29 @@ Seção Básica:
              na memória.
         OBS: Se não colocar os parenteses o retorno de uma função é simplesmente ela mesma com um type function.
         OBS: none, significa não valor podemos utilizar como false em if's.
+
+    Funções parte 3:
+        *args | **kwargs [keywords arguments] -> Nomes padrões
+
+        Funções com retorno:
+            Quando um variavel recebe uma função seus dados passam a receber indices também e
+            podem passar a ser chamados por indices.
+
+            def fun(a, b, c)
+                return a, b -> Estamos retornando uma tupla com os valores.
+            j = fun(2,3,4)
+            print(jun[1]) -> retornaria b.
+        parametros:
+            def func(*args) -> O args funciona como uma lista (tupla), e portanto acessamos os dados como
+                               um desempacotamento. é possível castar essa tupla para lista e modificar o
+                               dado.
+            def func(**kwargs) -> esse argumento armazena valores passados por chaves, ou seja, nome=,
+                                  idade=, jonas=... em um dicionário separada.
+        metodos:
+            kwargs.get(key): atribuisse o valor da chave a uma variável, melhor maneira de trabalhar pois
+                             não gera excessão no maximo a var fica com none.
+
+        OBS: Para desempacotar é possível também só utilizar o *lista no print que cada dado será
+             exibido por sua vez.
+        OBS: Se houver a algum argumento que se tenha um padrão todos após o mesmo tende ser padrão
+             funciona da mesma forma com o programa principal.
