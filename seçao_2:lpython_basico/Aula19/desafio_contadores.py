@@ -1,7 +1,3 @@
-for c in range(0, 9):
-    print(f'FOR: {c}')
+for p, c in enumerate(range(10, 1, -1)):
+    print(p, c)
 print('-' * 10)
-cont = 10
-while cont >= 2:
-    print(f'WHILE: {cont}')
-    cont -= 1
