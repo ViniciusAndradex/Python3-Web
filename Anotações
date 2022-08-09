@@ -196,3 +196,7 @@ Seção Básica:
             def func(msg='oi', num=0)
 
             func(num=5, msg='PICA')
+
+    Funções parte 2 [RETURN]:
+        Funções que retornam algo.
+        
