@@ -1,27 +1,22 @@
 cpf = '16899535009'
-list_cpf = []
-cont = 0
+new_cpf = cpf[:-2]
+total = index = 0
+c = 10
+
 # Criando a analise e adição dos números do digito 0.
-for n, c in enumerate(range(10, 1, -1)):
-    cont += int(cpf[n]) * c
-    list_cpf.append(cpf[n])
+while True:
+    total += int(new_cpf[index]) * c
+    if c == 2:
+        digit = 11 - (total % 11)
+        new_cpf += '0' if digit > 9 else str(digit)
+        if len(new_cpf) == 11:
+            break
+        cont = index = 0
+        c = 11
+    c -= 1
+    index += 1
 
-formula = 11 - (cont % 11)
-digito0 = 0 if formula > 9 else formula
-list_cpf.append(str(digito0))
-
-cont = 0
-for n, c in enumerate(range(11, 1, -1)):
-    cont += int(list_cpf[n]) * c
-
-formula = 11 - (cont % 11)
-digito1 = 0 if formula > 9 else formula
-list_cpf.append(str(digito1))
-
-new_cpf = ''
-for c in list_cpf:
-    new_cpf += c
 if new_cpf == cpf:
-    print(f'O seu cpf é {new_cpf}')
+    print(f'O seu cpf é valido: {new_cpf}')
 else:
-    print('Sinto muito os digitos encontrados não batem.')
+    print('Sinto muito os digitos encontrados não batem, CPF INVALIDO.')
