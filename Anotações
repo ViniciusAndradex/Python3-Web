@@ -329,3 +329,16 @@ Seção Básica:
             OBS: UPDATE normalmente é usado para objetos com mais de um.
             OBS: Os sets não duplicam valores então pode ser uma alternativa se tratando desse tipo de problema.
         OBS: Os sets não respeitam ordem e portanto a cada execução eles podem mudar.
+
+    List comprenhesion:
+        é utilizada para a otimização de performance e escrita mais limpa.
+        se trata de um maneira otimizada de reutilizar listas anteriores.
+        demonstração:
+            l1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            ex = [variavel for variavel in l1]
+            ex irá receber todos os valores de l1, isso é o list comprehesion. E funciona para diversas
+            maneiras podendo fazer alterações diretas nos dados.
+            ex5 = [(y, x) for x, y in tupla] -> Inverter valores mesmo que em tuplas.
+            ex6 = [v for v in l3 if v % 2 == 0] -> Faz a verificação da condição que eu quero!
+            ex8 = [v if v % 3 == 0 else 'Não é' for v in l3] -> if/else
+            OBS: A utilização do for indica o laço e quanto mais for, mais identado.
