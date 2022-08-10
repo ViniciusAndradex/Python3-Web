@@ -249,3 +249,20 @@ Seção Básica:
             OBS: Ao declarar em qualquer lugar da minha função uma suposta var global
                  ela passa a ser a local e portanto se foi feito algo antes disso, dara um erro.
             BP: Evitar utilizar variáveis globais dentro das minhas funções.
+
+    Expressões lambda (funções anônimas):
+        Declaração:
+            Está expressão é indicada no programa princiapal!
+            var = lambda args: retorno
+
+        Exemplo de uso:
+            def func(item):
+                return item[1]
+            Nesse exemplo foi criado uma função para retornar somente o valor da chave da lista que eu  queria
+            sendo que não precisamos pois podemos utilizar das expressões lambda para isso.
+            lista.sort(key=lambda item: item[1])
+            também pode ser: lista, key=lambda i: i[1]
+
+        OBS: Estas funções são utilizadas com a finalidade de simplificar meu código, devemos sempre deixar
+             o mais limpo possível. Portanto resoluções simples que necessitam de função usamos lambda.
+        OBS: Utilizado para passar parametros para a criação de interfaces gráficas.
