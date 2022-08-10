@@ -266,3 +266,13 @@ Seção Básica:
         OBS: Estas funções são utilizadas com a finalidade de simplificar meu código, devemos sempre deixar
              o mais limpo possível. Portanto resoluções simples que necessitam de função usamos lambda.
         OBS: Utilizado para passar parametros para a criação de interfaces gráficas.
+
+    Tuplas:
+        declaração:
+            t = () or tuple() or 1, 2, 3 and 1,
+        Concatenação:
+            t = t + t1 por exemplo
+        Multiplicação de tuplas:
+            t = (1, 2) * 10 -> 10x 1,2
+        Conversão para lista:
+            list(t1) e agora pode ser modificado!!
