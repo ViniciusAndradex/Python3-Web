@@ -307,3 +307,25 @@ Seção Básica:
             var.update(var1)
         OBS: Uma key não pode ter um mesmo nome de outra, caso isso ocorra o ultimo valor é o que prevalece e sobrescreve
              os outros.
+
+    Conjuntos/sets:
+        Coleção de elementos, os sets só suportam elementos unicos, ou seja, só recebem valores.
+        Set não possui indice e portanto não tem um acesso direto.
+        Declaração:
+            set1 = {1,2,3,4,5} ou set()
+        metodos:
+            set.add(valor)
+            s1.discard(valor)
+            s1.update(valor) -> Recebe elemento de forma iteravel, ou seja, esse elemento é passado 'picotado'
+            union/|: Essa função une os elementos do set. -> s3 = s1 | s2
+            intersection/&: O set só recebe valores que estão em ambos os sets
+            difference/-: Estão função exibe os valores que não pertence a intersection do variavel a esquerda.
+                          exemplo:
+                            s = {1, 2, 3, 4, 5, 6}
+                            s2 = {1, 4, 9, 4, 10, 11}
+                            s5 = s - s2
+                            ---> {2, 3, 5, 6}
+            symmetric_difference/^: Exibe os valoresque não estão em intersection de ambo os sets.
+            OBS: UPDATE normalmente é usado para objetos com mais de um.
+            OBS: Os sets não duplicam valores então pode ser uma alternativa se tratando desse tipo de problema.
+        OBS: Os sets não respeitam ordem e portanto a cada execução eles podem mudar.
