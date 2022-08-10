@@ -340,5 +340,8 @@ Seção Básica:
             maneiras podendo fazer alterações diretas nos dados.
             ex5 = [(y, x) for x, y in tupla] -> Inverter valores mesmo que em tuplas.
             ex6 = [v for v in l3 if v % 2 == 0] -> Faz a verificação da condição que eu quero!
+                                     filter
             ex8 = [v if v % 3 == 0 else 'Não é' for v in l3] -> if/else
+                        ternário
+            BP: Para utilizar é recomendado quando queremos pegar um iteravel e criar um outro.
             OBS: A utilização do for indica o laço e quanto mais for, mais identado.
