@@ -242,6 +242,9 @@ Seção Básica:
             def dunc():
                 global var => Altera em qualquer lugar do código
 
+            OBS: Quando utilizamos uma função para chamar outras, é importante usarmos os args e kwargs
+                 pois os mesmos nos permitem passar os argumentos de forma direta sem a necessidade de
+                 pedir na função.
             OBS: não é uma boa prática de programação
             OBS: Ao declarar em qualquer lugar da minha função uma suposta var global
                  ela passa a ser a local e portanto se foi feito algo antes disso, dara um erro.

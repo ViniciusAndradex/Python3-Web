@@ -1,4 +1,4 @@
-def func1(func):
+def master(func):
     return func()
 
 
@@ -7,6 +7,6 @@ def func2(*args):
     return args
 
 
-var = func1(func2)
+var = master(func2)
 print(var)
 print(*var)
