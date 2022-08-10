@@ -276,3 +276,34 @@ Seção Básica:
             t = (1, 2) * 10 -> 10x 1,2
         Conversão para lista:
             list(t1) e agora pode ser modificado!!
+
+    Dicionario:
+        Declaração:
+            {}, dict()
+        Adição de elementos e alteração de valor:
+            dict['nome_da_chave'] = valor da chave -> Mais comum]
+            dict['nome_da_chave'] = valor da chave_mudei or dict.update({'nova_chave': 'mudei_denovo'})
+        Keys:
+            regras:
+                strings, int or tuple: Isto ocorre pois todos os valores são imutaveis.
+        Metodos:
+            var.get: Esse método nos retorna none caso a chave passada ao mesmo não exista, assim evitando que o
+                     código quebre
+            del var['chave']
+            len(dict): número de pares key - value
+            var.pop(chave)
+            var.popitem(): elimina o último.
+
+        Associação:
+            dict = {1: 'a', 2: 'b'}
+            a = dict -> Desta forma a variavel se liga ao dict e portanto ambos se modificam, ou seja, cada modificação
+                        afeta ambas as variáveis.
+            a = dict.copy -> shallow copy implica dizer que os valores não se copiam mas o que ocrre é um referenciamento,
+             ou seja, elementos que podem ser alterados como listas, se alteram em ambas as listas uma soluçãoé o
+             modulo copy. from copu import deepcopy
+        casting:
+            dict(lista, tuple) -> desde que exista um par nas mesmas
+        Concatenação:
+            var.update(var1)
+        OBS: Uma key não pode ter um mesmo nome de outra, caso isso ocorra o ultimo valor é o que prevalece e sobrescreve
+             os outros.
