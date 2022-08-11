@@ -349,3 +349,37 @@ Seção Básica:
     Dictionary Comprehension:
         A diferença se dá na maneira em que você trabalha com dicionario e que você utiliza na realidad as {}.
         Para utilizarmos o set comp basta fazermos com apenas 1 valor
+
+    Geradores, Iteradores e iteraveis:
+        iteraveis: Os objetos iteraveis são aqueles que nós podemos interagir com cada elemento
+            verificação:
+                hasattr(elemento, '__iter__')
+        Iterador: São elementos que permitem exibir um elemento por vez como por exemplo o for.
+                  É possível tranformar um objeto iteravel em iterador:
+                  x = iter(x) -> utilizando o método next(x) é possível ver um elemento por vez.
+                  OBS: Ao converter para iteravel a var obtem o método '__next__' que permite a iteração.
+                  OBS: Nem todo iteravel é iterador.
+        Geradores:
+            As funções geradores permite que seja possível observar e receber os dados de forma com que não precisemos
+            esperar o carregamento de todas, muito utilizado principalmente em dados muito pesado. (lazy evaluation)
+            Essa função me retorna o que foi processado no momento.
+
+            Declaração:
+                yield dado
+            Generator comprehesion [alternativa para não ter que criar funções]:
+                lista = (x for x in range(1000))
+                iterações:
+                    print(next(lista)) or for v in lista:
+            Vale ressaltar que quando convinher utilizar o gerador é melhor pois o mesmo não retém todos os dados
+            guardados mas somente quando é chamado o que permite um valor minímo de memória utilizada.
+        OBS: Todo iterador é iteravel mas nem sempre o contrario é verdade.
+
+        Comportamento dos iteraveis:
+            iteraveis são as sequencias: str, list, tupla.
+            for converte uma sequencia em iterador em tempo de execução!
+            O gerador possui a mesma caracteristica de uma variavel que se tornou iteravel.
+
+            OBS FINAL: Este tipo de dado é feito para ser consumido 1 vez.
+
+            OBS: Importante ressaltar que ao converter em um iterador o iterador tem um limite pois
+                 ao transmitir um dado ele deixa de ter o mesmo armazenado.
