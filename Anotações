@@ -361,7 +361,7 @@ Seção Básica:
                   OBS: Nem todo iteravel é iterador.
         Geradores:
             As funções geradores permite que seja possível observar e receber os dados de forma com que não precisemos
-            esperar o carregamento de todas, muito utilizado principalmente em dados muito pesado. (lazy evaluation)
+            esperar o carregamento de todas, muito utilizado principalmente em dados muito pesados. (lazy evaluation)
             Essa função me retorna o que foi processado no momento.
 
             Declaração:
@@ -381,19 +381,27 @@ Seção Básica:
 
             OBS FINAL: Este tipo de dado é feito para ser consumido 1 vez.
 
-            OBS: Importante ressaltar que ao converter em um iterador o iterador tem um limite pois
+            OBS: Importante ressaltar que ao converter em um iterador o mesmo tem um limite pois
                  ao transmitir um dado ele deixa de ter o mesmo armazenado.
 
     Unindo Iteraveis (Zip, Zip_longest):
         | Zip - Union iteraveis | Zip_longest itertools |
 
         Zip: faz a união de objeto iteraveis, gerando tuplas de acordo com os indices dos mesmos, ele leva em conta
-             a quantidade de cada um, ele só ira guardar os dados até o menor valor de um das listas.
-             Resultado final é um gerador com as
-             tuplas.
+         ele só ira guardar os dados até o menor valor de uma das listas.
+         Resultado final é um iterador com as tuplas.
         definição = zip(iteravel, iteravel)
 
         Zip_longest (Modulo - itertools):
             Com o zip_longest ele ira fazer a união baseada na maior lista, se uma for maior que a outra os valores
             são preenchidos com None.
             - É possível preencher com outro valor ao invés de None, basta por fillvalue='o que desejar'
+
+    itertools.Count:
+        Gera Iterador!
+        A função retorna um iterador e portanto faz uma contagem de acordo com a necessidade do codigo.
+        Declaração:
+            var = count()
+            Parametros(start=, step=)
+        Metodos:
+            round(valor), número de casas.
