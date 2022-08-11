@@ -397,11 +397,30 @@ Seção Básica:
             são preenchidos com None.
             - É possível preencher com outro valor ao invés de None, basta por fillvalue='o que desejar'
 
-    itertools.Count:
-        Gera Iterador!
-        A função retorna um iterador e portanto faz uma contagem de acordo com a necessidade do codigo.
-        Declaração:
-            var = count()
-            Parametros(start=, step=)
-        Metodos:
-            round(valor), número de casas.
+    itertools:
+        count:
+            Gera Iterador!
+            A função retorna um iterador e portanto faz uma contagem de acordo com a necessidade do codigo.
+            Declaração:
+                var = count()
+                Parametros(start=, step=)
+            Metodos:
+                round(valor), número de casas.
+
+        combinations:
+            faz todas as combinações possíveis de um dado iteravel.
+            OBS: A ORDEM NÃO IMPORTA
+            declaração:
+                combinations(lista, num_combination)
+        permutation:
+            faz todas as combinações possíveis de um dado iteravel.
+            OBS: A ORDEM IMPORTA
+            OBS: nesse caso a permutação não faz um dado com ele mesmo.
+            declaração:
+                permutation(lista, num_combination)
+        product:
+            faz todas as combinações possíveis de um dado iteravel.
+            OBS: A ORDEM IMPORTA
+            OBS: nesse caso a permutação faz um dado com ele mesmo.
+            declaração:
+                permutation(lista, repeat=num_combination)
