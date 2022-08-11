@@ -345,3 +345,7 @@ Seção Básica:
                         ternário
             BP: Para utilizar é recomendado quando queremos pegar um iteravel e criar um outro.
             OBS: A utilização do for indica o laço e quanto mais for, mais identado.
+
+    Dictionary Comprehension:
+        A diferença se dá na maneira em que você trabalha com dicionario e que você utiliza na realidad as {}.
+        Para utilizarmos o set comp basta fazermos com apenas 1 valor
