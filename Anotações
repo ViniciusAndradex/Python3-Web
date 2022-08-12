@@ -458,3 +458,23 @@ Seção Básica:
             soma_total = reduce(lambda ac, i: i + ac, lista, 0)
             soma_precos = round(reduce(lambda ac, it: it['preco'] + ac, produtos, 0), 2)
             media_idade = reduce(lambda ac, i: i['idade'] + ac, pessoas, 0)
+
+    Try/except:
+        Exceptions são erros que causam erros que encerram a execução.
+
+        declaração:
+            try: -> Bloco de rastreamento de erros
+
+            except (ideal é colocar o nome do erro) as (apelido|variavel): -> bloco de captura |
+                    BP: não é uma boa prática deixar dessa forma sem especificar o tipo de exceção.
+                    OBS: Não é bom exibir o erro para o user porém é importante trata-lo e dar uma
+                    informação miníma que o user entenda.
+                    OBS: Podem existir quantos excepts forem necessários, lembrando que somente 1
+                         é captura e portanto restante não é executado, nesse caso a ordem dos
+                         excepts importam.
+                    **a variavel retorna o problema ocorrido e não o nome do erro.**
+            except (KeyError, NameError) as erro:
+            else: -> Em caso de não haver nenhum erro, esse bloco é executado!
+            finally: -> esse bloco sempre será executado!
+                    Pode ser comum nesse bloco dar valores padrões pois depois de verificado os erros
+                    a variavel tende a não cair mais em execptions.
