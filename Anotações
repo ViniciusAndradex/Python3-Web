@@ -483,3 +483,19 @@ Seção Básica:
             do código!
             essa função também pode ser utilizada para alterar o texto de erro do terminal.
             Exemplo:
+
+        Excepts como condicionais:
+            def converte_numero(valor):
+                try:
+                    valor = int(valor)
+                    return valor
+                except ValueError as error:
+                    try:
+                        valor = float(valor)
+                        return valor
+                    except ValueError:
+                        pass
+
+            Explicação: O try está como if e except como else, basicamente se um error for capturado
+                        será excutado um outro bloco tentando converter para float e caso não funcione
+                        não é um número.
