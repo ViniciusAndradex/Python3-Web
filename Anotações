@@ -424,3 +424,5 @@ Seção Básica:
             OBS: nesse caso a permutação faz um dado com ele mesmo.
             declaração:
                 permutation(lista, repeat=num_combination)
+
+        tee() -> faz a copia do itereval que você solicitar e quantas foram necessárias.
