@@ -510,3 +510,23 @@ Seção Básica:
         modulos:
             sys:
                 platform : indica a plataforma em que o o código está sendo executado.
+
+    Como criar modulos:
+        armazenar suas propias funções como modulo para reutilização em códigos.
+        OBS: Para criar constantes ficou pre-definido pela comunidade que a variavel fica toda em
+             maiuscula.
+        Para criar basta criar qualquer arquivo python que já é o suficiente para importa-lo de
+        qualquer lugar no meu ambiente.
+
+        é possível saber qual modulo está sendo importado com o __name__, caso essa função seja executada
+        no proprio modulo ele retorna main.
+        Isto é utilizada para executar os testes ou não do seu modulo, tendo em vista que a execução do
+        __name__ em um arquivo que está importando retorna o nome do modulo, já o proprio modulo retorna
+        __main__.
+        Exemplo:
+        if __name__ == '__main__':
+            print(__name__)
+            lista = [1, 2, 3, 4, 5, 6]
+            print(dobra_lista(lista))
+            print(multiplica(lista))
+            print(PI)
