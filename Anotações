@@ -426,3 +426,19 @@ Seção Básica:
                 permutation(lista, repeat=num_combination)
 
         tee() -> faz a copia do itereval que você solicitar e quantas foram necessárias.
+
+    As opções abaixo, podem ser substituidas por list comprehension.
+    map:
+        O map recebe uma função como argumento, muito utilizada com dicionarios.
+        OBS: é mais comum utilizarmos a list comprehension,essa é uma alternativa para a mesma.
+        declaração:
+            map(func, lista) -> Retorno é um iterador!
+            precos = map(aumento_preco(função criada), produtos)
+            round() = arredonda para cima, ',' numero de casas.
+
+    filter:
+        Filter faz o retorno de True ou False, ele faz a analise se baseando em uma função e os True
+        ficam na lista[iterador], os false não ficam.
+        OBS: Se recomenda utilizar função inves de lambda, por questão de reutilidade.
+        declaração:
+            filter(função, lista) -> permanecem os verdadeiros.
