@@ -424,6 +424,7 @@ Seção Básica:
             OBS: nesse caso a permutação faz um dado com ele mesmo.
             declaração:
                 permutation(lista, repeat=num_combination)
+<<<<<<< Updated upstream
 
         tee() -> faz a copia do itereval que você solicitar e quantas foram necessárias.
 
@@ -442,3 +443,6 @@ Seção Básica:
         OBS: Se recomenda utilizar função inves de lambda, por questão de reutilidade.
         declaração:
             filter(função, lista) -> permanecem os verdadeiros.
+=======
+       
+>>>>>>> Stashed changes
