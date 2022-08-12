@@ -478,3 +478,8 @@ Seção Básica:
             finally: -> esse bloco sempre será executado!
                     Pode ser comum nesse bloco dar valores padrões pois depois de verificado os erros
                     a variavel tende a não cair mais em execptions.
+        raise | lançar exceptions:
+            Essa função serve para relançar a exception da mesma forma que foi tratada em outro ponto
+            do código!
+            essa função também pode ser utilizada para alterar o texto de erro do terminal.
+            Exemplo:
