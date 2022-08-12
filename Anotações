@@ -499,3 +499,14 @@ Seção Básica:
             Explicação: O try está como if e except como else, basicamente se um error for capturado
                         será excutado um outro bloco tentando converter para float e caso não funcione
                         não é um número.
+
+    Modulos padrão:
+        | modulos built-in | importação da linguagem | modulos extra python |
+
+        declaração:
+            from mod import def or import mod
+            extra: as indica um apelido e portanto a def pode ser chamada pelo apelido.
+
+        modulos:
+            sys:
+                platform : indica a plataforma em que o o código está sendo executado.
