@@ -424,7 +424,10 @@ Seção Básica:
             OBS: nesse caso a permutação faz um dado com ele mesmo.
             declaração:
                 permutation(lista, repeat=num_combination)
-<<<<<<< Updated upstream
+    itertools.groupby:
+        a função faz uma subdivisão dos dados que eu solicitei.
+        por exemplo por nota, ele subdivide minha lista em 2 primeiro o agrupamentos e segundo
+        os valores que estão dentro do agrupamento.
 
         tee() -> faz a copia do itereval que você solicitar e quantas foram necessárias.
 
@@ -443,6 +446,15 @@ Seção Básica:
         OBS: Se recomenda utilizar função inves de lambda, por questão de reutilidade.
         declaração:
             filter(função, lista) -> permanecem os verdadeiros.
-=======
-       
->>>>>>> Stashed changes
+
+    reduce:
+        from functools import reduce
+        É uma função utilizada para criar um acumulador.
+        declaração:
+            var = reduce(def(focada em retornar um valor acumulativo), lista, valor_inicial)
+            retorna é um valor!
+
+        Exemplos:
+            soma_total = reduce(lambda ac, i: i + ac, lista, 0)
+            soma_precos = round(reduce(lambda ac, it: it['preco'] + ac, produtos, 0), 2)
+            media_idade = reduce(lambda ac, i: i['idade'] + ac, pessoas, 0)
