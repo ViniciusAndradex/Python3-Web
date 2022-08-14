@@ -530,3 +530,7 @@ Seção Básica:
             print(dobra_lista(lista))
             print(multiplica(lista))
             print(PI)
+
+    Pacotes:
+        python-package
+        Para confirmar um pakage sempre será criado um arquiv __init__ que será ou não utilizado.
