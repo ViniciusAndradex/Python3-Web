@@ -564,4 +564,12 @@ Seção Básica:
     Funções decoradoras e decoradores:
         A função decoradora armazena os dados em uma função master.
         @func_master:
-        
+
+    Parâmetros mutáveis:
+        Quando utilizamos parâmetros mutáveis nas minhas funções, temos que entender que os dados mutaveis irão acumular
+        e causara um problema no final.
+        Solução elegante:
+            ponha os dados para receber None:
+                def var(lista=None): e o segundo passo é
+                    if lista is None:
+                        lista = tipo do dado -> Somente o None causa problema pois iteraveis não trabalham com None
