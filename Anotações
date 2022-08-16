@@ -537,4 +537,13 @@ Seção Básica:
         OBS: Tomar cuidado com o local do package pois pode ocorrer um erro de Module
 
     Arquivos:
-        
+        Básica:
+            open() -> Está função permite trabalhar com arquivos.
+            open('nome do arquivo', 'modo de trabalho com o arquivo')
+        open:
+            write: Escreve.
+            close: fecha o arquivo, sempre fechar!
+            seek(pos, posABS): Volta o cursor a posição indicada para leitura
+            read: faz a leitura do arquivo.
+            readline: faz a leitura da linha do arquivo.
+            readlines: Joga as linhas do arquivo dentro de uma lista.
