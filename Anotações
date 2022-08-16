@@ -534,3 +534,7 @@ Seção Básica:
     Pacotes:
         python-package
         Para confirmar um pakage sempre será criado um arquiv __init__ que será ou não utilizado.
+        OBS: Tomar cuidado com o local do package pois pode ocorrer um erro de Module
+
+    Arquivos:
+        

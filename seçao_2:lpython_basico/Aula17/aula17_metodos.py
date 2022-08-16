@@ -6,7 +6,7 @@ palavra = ''
 contagem = 0
 
 for val in lista1:
-    # print(f'A palavra {val} apareceu {lista1.count(val)}x vezes ')
+    # print(formata'A palavra {val} apareceu {lista1.count(val)}x vezes ')
     qtd_vezes = lista1.count(val)
     if qtd_vezes > contagem:
         contagem = qtd_vezes
