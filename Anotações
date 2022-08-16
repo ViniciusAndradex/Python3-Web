@@ -560,3 +560,8 @@ Seção Básica:
             OBS: O gerenciador se encarrega de fechar o arquivo, o que torna a melhor maneira para se utilizar arquivo.
             *with* open(arq, ' modo') as apelido:
                 bloco
+
+    Funções decoradoras e decoradores:
+        A função decoradora armazena os dados em uma função master.
+        @func_master:
+        
