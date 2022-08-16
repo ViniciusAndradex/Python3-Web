@@ -23,7 +23,6 @@ for person in only_person:
 print('\033[1;31mMAP[IDADE]:')
 
 
-
 def aumento_idade(p):
     p['nova_idade'] = round(p['idade'] * 1.20)
     return p

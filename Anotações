@@ -540,6 +540,14 @@ Seção Básica:
         Básica:
             open() -> Está função permite trabalhar com arquivos.
             open('nome do arquivo', 'modo de trabalho com o arquivo')
+                modos:
+                    r: somente leitura
+                    w: escreve e trunca o arquivo, ou seja, sobrescreve os dados antigos..
+                    x: somente cria o arquivo, falha se o mesmo já existir.
+                    a: somente escreve no final do arquivo, se o arquivo já existir
+                    b: binary mode
+                    t: text mode
+                    +: faz o update de escrita e leitura.
         open:
             write: Escreve.
             close: fecha o arquivo, sempre fechar!
@@ -547,3 +555,8 @@ Seção Básica:
             read: faz a leitura do arquivo.
             readline: faz a leitura da linha do arquivo.
             readlines: Joga as linhas do arquivo dentro de uma lista.
+
+        Gerenciador de contexto:
+            OBS: O gerenciador se encarrega de fechar o arquivo, o que torna a melhor maneira para se utilizar arquivo.
+            *with* open(arq, ' modo') as apelido:
+                bloco
