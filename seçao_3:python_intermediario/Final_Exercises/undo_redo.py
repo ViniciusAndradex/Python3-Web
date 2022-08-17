@@ -1,44 +1,50 @@
-from funcoes_exercise.listagem import listar, cabecalho, lines
-from funcoes_exercise.undo_redo_func import remove
+from funcoes_exercise.listagem import lines, menu
+from funcoes_exercise.undo_redo_func import adicionar, apresentar, remover, devolver
 
 try:
     open('tarefas.txt', 'x')
 except Exception:
     print('O arquivo já foi criado!')
 
+buffer = ''
+
 while True:
     while True:
         try:
-            menu = input('''
-    [1] Adicionar Tarefa
-    [2] Listar Tarefas
-    [3] Desfazer tarefa
-    [4] Refazer tarefa
-    [0] Sair
-    - Opção: ''')
-            menu = int(menu)
-        except ValueError:
-            print('Por favor digite um número [0 - 4]\n')
+            menu()
+            opc = input()
+            opc = int(opc)
+            if 0 > opc or opc > 4:
+                raise ValueError('Escolha um valor entre [0 | 4]')
+        except ValueError as error:
+            print(f'Por favor digite um número [{error}]\n')
         else:
             break
     lines()
     with open('tarefas.txt', 'a+') as file:
-        if menu == 1:
-            tarefa = input('Adicione Tarefa: ')
-            tarefa = tarefa + '\n'
-            file.write(tarefa)
+        if opc == 1:
+            adicionar(file)
             lines()
-        elif menu == 2:
+        elif opc == 2:
+            apresentar(file)
+            lines()
+        elif opc == 3:
             file.seek(0)
-            cabecalho()
-            for item in file.readlines():
-                listar(item)
+            var = file.readlines()
+            if var:
+                buffer = remover(var, buffer=buffer)
+                print(f'Tarefa Removida: {buffer}', end='')
+            else:
+                print('Você não possui nenhuma tarefa')
             lines()
-        elif menu == 3:
-            for line in file.readlines():
-                file.
-
-        elif menu == 4:
-            pass
-        elif menu == 0:
+        elif opc == 4:
+            file.seek(0)
+            var = file.readlines()
+            if buffer:
+                buffer = devolver(var, buffer)
+                print(f'Tarefa Recuperada: {buffer}', end='')
+            else:
+                print('Você não possui nenhuma tarefa')
+            lines()
+        elif opc == 0:
             break
