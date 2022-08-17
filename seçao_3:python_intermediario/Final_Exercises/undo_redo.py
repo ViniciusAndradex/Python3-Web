@@ -1,5 +1,5 @@
 from funcoes_exercise.listagem import listar, cabecalho, lines
-from funcoes_exercise.undo_redo import remove
+from funcoes_exercise.undo_redo_func import remove
 
 try:
     open('tarefas.txt', 'x')
