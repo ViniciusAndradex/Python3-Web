@@ -606,12 +606,17 @@ Seção Básica:
 
     Métodos de classe:
         Criar:
-            @classmethod
+            @classmethod -> decorador
             def algo(cls[pode ser qualquer nome, porém por conveção da comunidade usamos 'cls'])
             Esse método tem que retornar a propria para a propria classe fazemos cls(tudo que for necessario para
             preencher o contrutor).
 
             É uma alternativa para criação de objetos e utilização interna.
+            OBS: Para a criação de métodos normais é necessário uma instância.
 
     Métodos estáticos:
-        
+        @staticmethod -> Esse método não necessita nem da classe e nem de uma instância, apesar de poder receber parametros
+        def gera():
+
+        Este método pode ser utilizado, pelo objeto e class porém, ele não pode utilizar self or class. Somente se passado
+        direto como parâmetros.
