@@ -573,3 +573,4 @@ Seção Básica:
                 def var(lista=None): e o segundo passo é
                     if lista is None:
                         lista = tipo do dado -> Somente o None causa problema pois iteraveis não trabalham com None
+-----------------------------------------------------------------------------------------------------------------------
