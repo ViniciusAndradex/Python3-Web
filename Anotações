@@ -603,3 +603,15 @@ Seção Básica:
     Podemos criar variáveis da própria classe:
         var = x -> de forma normal
         OBS: As variáveis podem ser chamadas pelos objetos e pela própria class.
+
+    Métodos de classe:
+        Criar:
+            @classmethod
+            def algo(cls[pode ser qualquer nome, porém por conveção da comunidade usamos 'cls'])
+            Esse método tem que retornar a propria para a propria classe fazemos cls(tudo que for necessario para
+            preencher o contrutor).
+
+            É uma alternativa para criação de objetos e utilização interna.
+
+    Métodos estáticos:
+        
