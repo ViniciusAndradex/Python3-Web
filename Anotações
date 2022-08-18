@@ -620,3 +620,16 @@ Seção Básica:
 
         Este método pode ser utilizado, pelo objeto e class porém, ele não pode utilizar self or class. Somente se passado
         direto como parâmetros.
+
+    Getter and Setter:
+        Getter:
+            @property
+            def preco(self)
+                return self._[preco] -> por padrão usamos o _ na frente
+
+        Setter:
+            @nome_da_var.setter
+            def preco(self, valor):
+                self._preco = valor
+
+        No python na hora de ligar o valor ele vai em busca setter e do getter.
