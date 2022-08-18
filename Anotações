@@ -574,3 +574,32 @@ Seção Básica:
                     if lista is None:
                         lista = tipo do dado -> Somente o None causa problema pois iteraveis não trabalham com None
 -----------------------------------------------------------------------------------------------------------------------
+    Python - POO
+
+    Criação classe:
+        class nome da classe:
+
+    Utilizar classe:
+        import modulo/nome_class
+
+    Instanciar:
+        p1 = nome da class()
+
+        OBS: A partir de p1 podemos criar variáveis, exemplo: p1.nome(''). As variáveis levam o nome de atributo.
+
+    Contrutores:
+            def __init__(self, nome):
+                self.nome = nome
+                IMPORTANTE: Ressaltando que os parâmetro passados não recebem de forma automática os valores passado e
+                portanto cabe ao contrutor fazer o recebimento dos valores.
+            OBS: O self representa o objeto que instanciado que chamou o método, podemos dizer que é a identidade dele
+                 na classe. Esse parâmetro já é enviado de forma automática.
+    Métodos:
+        def falar(self):
+
+        OBS: Variáveis criadas no escopo de um método são criadas de forma local.
+    OBS: valores passados a self estão de forma global na minha class.
+
+    Podemos criar variáveis da própria classe:
+        var = x -> de forma normal
+        OBS: As variáveis podem ser chamadas pelos objetos e pela própria class.
