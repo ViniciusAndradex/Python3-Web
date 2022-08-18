@@ -638,3 +638,15 @@ Seção Básica:
         As variáveis de classes só podem ser alteradas globalmente por elas mesmas, quando tentamos fazer essa mudança
         com o objeto, na verdade o objeto criar uma var para ele e somente ele modfica.
         Possível observar com __dict__.
+
+    Encapsulamento:
+        OBS: Em python é completamente diferente de outras.
+        Convenções: _ e __
+            _: transforma o dado em privado/protect mesmo que parcialmente, pois ao colocar ._  é possível acessar.
+            __: É a mesma coisa porém esse é fortemente recomendado que não se altere.
+
+            OBS: __ protege mais ainda, pois, ao utilizar o user não pode alterar mas sim adicionar criando uma nova
+                 variǘael.
+
+            PARA FAZER O ACESSO REAL AOS MEUS ATRIBUTOS:
+                instancia._class__item de desejo - Os getter e setter fazem com essa situação não seja
