@@ -633,3 +633,8 @@ Seção Básica:
                 self._preco = valor
 
         No python na hora de ligar o valor ele vai em busca setter e do getter.
+
+    Variaveis de classe:
+        As variáveis de classes só podem ser alteradas globalmente por elas mesmas, quando tentamos fazer essa mudança
+        com o objeto, na verdade o objeto criar uma var para ele e somente ele modfica.
+        Possível observar com __dict__.
