@@ -687,4 +687,13 @@ Seção Básica:
                  com está função vê o momento exato da exclusão de algum dado, adiantando o garbage collector.
 
         Herança (É):
-            
+           Uma classe filha consegue adiquirir as caracteristicas de uma classe Pai.
+
+           Declaração:
+            class Nome(nome do pai)
+
+           Identificar a classe que está usando o Pai:
+                self.__class__.__name__
+
+    Herança:
+        Sobreposiçãop de membros
