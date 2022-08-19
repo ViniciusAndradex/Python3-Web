@@ -652,7 +652,7 @@ Seção Básica:
                 instancia._class__item de desejo - Os getter e setter fazem com essa situação não seja
 
     Relações:
-        Associações:
+        Associações (USA):
             Como o proprio nome resslta é uma maneira de ligar uma ou mais classes que se conversam.
 
             Para associarmos basta, criar um atributo que possa receber um objeto de qualquer outra classe.
@@ -676,9 +676,15 @@ Seção Básica:
                         self.__ferramenta = valor
                 OBS: Neste caso ferramenta da vazão para ser utilizado.
 
-        Agregação:
+        Agregação (Tem):
             Precisa de.
             Um funciona sem o outro mas não necessariamente, bem.
 
-        Composição
+        Composição (É DONO):
+            Pertence a classe e quando uma se perde na outra também se perde.
 
+            OBS: é possível identificar quando o garbage colector entra em ação com o método def '__del__'
+                 com está função vê o momento exato da exclusão de algum dado, adiantando o garbage collector.
+
+        Herança (É):
+            
