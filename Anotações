@@ -696,4 +696,13 @@ Seção Básica:
                 self.__class__.__name__
 
     Herança:
-        Sobreposiçãop de membros
+        Sobreposição de membros:
+            basta reescrever o método com o mesmo nome, que sempre executará o da propria classe sobreescrevendo
+            o de outras.
+
+            super() (Classe Pai):
+                este método permite que mesmo com sobreposição é possível chamar métodos que foram sobrescrevidos.
+                Para contrutores:
+                    def __init__(self, parametro do Pai):
+                        super().__init__(mesmos parametros do Pai.)
+            OBS: Caso queira chamar de um local especifico basta chamar pelo nome da classe.método(passar os parâmetros).
