@@ -706,3 +706,9 @@ Seção Básica:
                     def __init__(self, parametro do Pai):
                         super().__init__(mesmos parametros do Pai.)
             OBS: Caso queira chamar de um local especifico basta chamar pelo nome da classe.método(passar os parâmetros).
+
+        Herança Multipla:
+            class X(A,B): -> Desta forma minha classes está herdando atributos e A e B, porém para evitar conflitos de
+                             nome o python da a prioridade a class mais a esquerda.
+
+            class mixim: É uma class cuja sua função é ajudar a implementar outra e não ser instanciada.
