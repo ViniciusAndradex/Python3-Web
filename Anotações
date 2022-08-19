@@ -650,3 +650,31 @@ Seção Básica:
 
             PARA FAZER O ACESSO REAL AOS MEUS ATRIBUTOS:
                 instancia._class__item de desejo - Os getter e setter fazem com essa situação não seja
+
+    Relações:
+        Associações:
+            Como o proprio nome resslta é uma maneira de ligar uma ou mais classes que se conversam.
+
+            Para associarmos basta, criar um atributo que possa receber um objeto de qualquer outra classe.
+
+            exemplo:
+                class Escritor:
+                    def __init__(self, nome):
+                        self.__nome = nome
+                        self.__ferramenta = None
+
+                    @property
+                    def nome(self):
+                        return self.__nome
+
+                    @property
+                    def ferramenta(self):
+                        return self.__ferramenta
+
+                    @ferramenta.setter
+                    def ferramenta(self, valor):
+                        self.__ferramenta = valor
+                OBS: Neste caso ferramenta da vazão para ser utilizado.
+
+        Agregação:
+            
