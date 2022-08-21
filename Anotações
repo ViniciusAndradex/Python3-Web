@@ -723,4 +723,10 @@ Seção Básica:
                     pass
 
     Polimorfismo:
+        é o principio que permite que classes derivadas de uma mesma superclasse tenham métods iguais,
+        [Mesma assinatura] com comportamentos diferentes
+
+        OBS: No python o polimorfismo só é feito por sobreposição, não existe sobrecarga.
+
+    Criando exceções:
         
