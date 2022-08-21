@@ -1,0 +1,18 @@
+from classes_abstract.conta import Conta
+
+
+class ContaCorrente(Conta):
+    def __init__(self, agencia, conta, saldo, limite=100):
+        super().__init__(agencia, conta, saldo)
+        self._limite = limite
+
+    @property
+    def limite(self):
+        return self._limite
+
+    def saque(self, valor):
+        if (self.saldo + self.limite) < valor:
+            print('Saldo Insuficiente!')
+            return
+        self.saldo -= valor
+        self.detalhes()

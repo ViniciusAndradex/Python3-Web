@@ -712,3 +712,15 @@ Seção Básica:
                              nome o python da a prioridade a class mais a esquerda.
 
             class mixim: É uma class cuja sua função é ajudar a implementar outra e não ser instanciada.
+
+    Classes abstratas:
+    A classe abstrata só serve como base para a criação de outras classes, ou seja, ela não pode ser instanciada só
+    herdada.
+        criação:
+            from abc import ABC, abstractmethod.
+                @abstractmethod
+                def saque(self, valor):
+                    pass
+
+    Polimorfismo:
+        
