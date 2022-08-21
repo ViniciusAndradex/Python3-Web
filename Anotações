@@ -765,3 +765,28 @@ Seção Básica:
         ~           __inv__         inversão
         toString    __repr__        Ao apresentar a propria classe apresentará a descrição passada aqui
         -----------------------------------------------------------------------------------------------
+
+    Métodos Mágicos:
+        Modificam o funcionamento do seu código.
+        __init__: Funciona como um construtor, porém em python o contrutor se baseia na junção __init__ e __new__ pois o
+                  new é o primeiro a executar.
+
+        __new__: É possível criar somente 1 objeto para a classe, esse tipo de coisa é utilizado em alguns design partner:
+                        if not hasattr(cls, '_jaexiste'):
+                            cls._jaexiste = object.__new__(cls)
+
+                        return cls._jaexiste
+        __call__: Me permite utilizar minha classe como uma função, passando os argumento e trabalhando com eles.
+                        def __call__(self, *args, **kwargs):
+                            print(args)
+                            print(kwargs)
+
+        __setattr__: sempre que um novo atributo for criado este método é chamado, é possível fazer uma validação de
+                     dados, já que ele detecta mas não valida o mesmo.
+                     self.__dict__[key] = value
+
+        __del__: Esse é um método que não há um encorajamento dos projetistas, pois não há garantia de que ele será
+                 chamado mas ele mostra quando o garbage collector apagou o objeto.
+
+        __str__: toString Ao apresentar a propria classe apresentará a descrição passada aqui
+        __len__: Burla o sistema e consegue fazer a contagem de objs.
