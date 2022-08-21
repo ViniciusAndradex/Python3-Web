@@ -729,4 +729,7 @@ Seção Básica:
         OBS: No python o polimorfismo só é feito por sobreposição, não existe sobrecarga.
 
     Criando exceções:
-        
+        criar:
+            class nomedoerro(Error - Conveção do Python)(Exception): -> Tem que herdar!
+                pass -> Se quiser fazer um tratamento é possível no corpo.
+                
