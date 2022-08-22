@@ -790,3 +790,5 @@ Seção Básica:
 
         __str__: toString Ao apresentar a propria classe apresentará a descrição passada aqui
         __len__: Burla o sistema e consegue fazer a contagem de objs.
+
+    Context Manager:
