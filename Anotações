@@ -792,3 +792,27 @@ Seção Básica:
         __len__: Burla o sistema e consegue fazer a contagem de objs.
 
     Context Manager:
+        @contextmanager
+        def abrir(arquivo, modo):
+            try:
+                arquivo = open(arquivo, modo)
+                yield arquivo  # retorne
+            finally:
+                arquivo.close()
+
+        Esse tipo de função é criada para que o progrma não quebre em caso de erro.
+
+        class Arquivo:  # Gerenciador
+            def __init__(self, arquivo, modo):
+                self.arquivo = open(arquivo, modo)
+
+            def __enter__(self):
+                return self.arquivo
+
+            def __exit__(self, exc_type, exc_val, exc_tb):  # exc_type:Tipo de exceção | exc_val: Valor | exc_tb: Trace Back
+                self.arquivo.close()
+                # return True Caso a exception tenha sido tratada.
+
+    Metaclasses:
+        São classes que criam classes.
+        É possível também criar classes através de um type.
