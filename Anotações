@@ -816,3 +816,25 @@ Seção Básica:
     Metaclasses:
         São classes que criam classes.
         É possível também criar classes através de um type.
+
+    DocStrings:
+        help(biblioteca)[Mais recomendado] ou print(função.__doc__)
+
+        Criar Documentação: Este é apenas um modelo existem várias de várias instituições.
+            """ Tudo escrito Aqui Será exibido no help() """
+
+            Cada Documentação muda apartir daqui:
+                :param
+                :type
+                :return
+                :rtype
+
+            TypeHints:
+                x: int = 10
+                y: float = 10.9
+
+                def(p1: float, p2: dict) -> float[Esse float indica o tipo de retorno da minha função]:
+                - BP: Fazer desta forma para facilitar a leitura dos companheiros.-
+                Para mais de um tipo de retorno:
+                    from typing import Union
+                    def func() -> Union[int, boolean]:
