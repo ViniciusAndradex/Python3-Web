@@ -1,0 +1,31 @@
+ctrl+shift+op = open with live server, para visualizar em um 'site' 
+
+Criação: qualquernome.html
+Estrutura HTML: Arquivo de texto, onde a semantica indica como estara predispos
+to no site.
+
+<>: Abertrua de tag.
+</>: fechamento
+Tags sem corpo: </>
+Atributos: pode estar presenten em todas as tags e são como variáveis.
+    <escreve atributo="Jorge">
+
+OBS: Prestar atenção nas hierarquias.
+OBS2: HTML5 é case insensitive.
+Estruturação do código perfeito, todos tem que ter:
+    <!doctype html> -> Não é obrigatório porém para validar é recomendado fazer.
+    <html lang="pt-BR">
+    <html> -> Todos são filhas dela e por tanto ela tem corpo e estão dentro da  mesma
+        <head> -> Não aparece na tela mas trata dos metadados, especificar o que tem no html, tudo que está por baixo dos panos vem aqui
+            <meta charset="utf-8" /> -> Não tem corpo, nós especificamos que queremos utilizar o utf-8 para que todas as letra e caracteres possem ser lidos.
+            <title>titulo do documento e é obrigatorio no codigo.</title>
+        </head>
+
+        <body> -> Tudo que aparece no nosso site está aqui dentro.
+            <p>
+                Paragrafo.
+            </p>
+        </body>
+    </hmtl>
+
+Validar HTML: validator.w3
