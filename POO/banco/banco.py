@@ -1,30 +1,23 @@
-from POO.contas.contabanco import Conta
-from POO.pessoas.cliente import Cliente
-
-
 class Banco:
-    def __init__(self, cliente, conta):
-        self._cliente = Cliente
-        self._conta = Cliente.conta
-        self._autenticar = False
+    def __init__(self):
+        self.agencias = [1111, 2222, 3333]
+        self.clientes = []
+        self.contas = []
 
-    @property
-    def autenticar(self):
-        return self._autenticar
+    def inserir_clientes(self, cliente):
+        self.clientes.append(cliente)
 
-    @classmethod
-    def autenticar_banco(cls, agencia, cliente, conta):
-        if not isinstance(agencia, Conta):
-            print('A agência em questâo não pertence ao banco solicitado.')
+    def inserir_conta(self, contas):
+        self.contas.append(contas)
+
+    def autenticar(self, cliente):
+        if cliente not in self.clientes:
             return False
 
-        if not isinstance(cliente, Cliente):
-            print('A agência em questâo não pertence ao banco solicitado.')
+        if cliente._conta not in self.contas:
             return False
 
-        if not isinstance(conta, Conta):
-            print('A agência em questâo não pertence ao banco solicitado.')
+        if cliente._conta.agencia not in self.agencias:
             return False
 
         return True
-    

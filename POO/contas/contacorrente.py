@@ -19,3 +19,4 @@ class ContaCorrente(Conta):
             return
 
         self.saldo -= valor
+        self.detalhe()

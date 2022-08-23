@@ -2,13 +2,9 @@ from POO.pessoas.pessoa import Pessoa
 
 
 class Cliente(Pessoa):
-    def __init__(self, nome, idade, conta):
+    def __init__(self, nome, idade):
         super().__init__(nome, idade)
-        self._conta = {}
+        self._conta = None
 
-    @property
-    def conta(self):
-        return self._conta
-
-    def detalhar(self):
-        self.c
+    def inserir_conta(self, conta):
+        self._conta = conta

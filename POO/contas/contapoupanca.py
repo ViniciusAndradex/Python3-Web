@@ -7,7 +7,8 @@ class ContaPoupanca(Conta):
             raise ValueError('Saldo Precisa ser númerico!')
 
         if self.saldo < valor:
-            print('Valor Ultrapassa o maxímo permitido.')
+            print('Saldo Insuficiente.')
             return
 
         self.saldo -= valor
+        self.detalhe()
