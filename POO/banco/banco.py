@@ -1,11 +1,11 @@
-from contas.contabanco import Conta
-from pessoas.cliente import Cliente
+from POO.contas.contabanco import Conta
+from POO.pessoas.cliente import Cliente
 
 
 class Banco:
     def __init__(self, cliente, conta):
-        self._cliente = cliente
-        self._conta = conta
+        self._cliente = Cliente
+        self._conta = Cliente.conta
         self._autenticar = False
 
     @property

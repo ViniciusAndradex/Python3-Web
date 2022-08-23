@@ -1,4 +1,4 @@
-from contabanco import Conta
+from POO.contas.contabanco import Conta
 
 
 class ContaCorrente(Conta):
