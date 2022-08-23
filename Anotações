@@ -853,4 +853,11 @@ Seção Básica:
         @dataclass(eq=True, repr=True, order=True, frozen=False, init=True)
 
     Enum:
-        
+        from enum import Enum
+
+        basta criar uma classes e todos os valores presentes ali será possivel de trabalhar com eles pois a analise sera
+        feita para o conjunto a exemplo de um if com diversas condições.
+
+    Iterator:
+        Estrutura de dados, essa aula foi criado para entender como as coisas acontecem por baixo dos panos, na aula nós
+        fazemos toda a estrutura por trás das listas.
