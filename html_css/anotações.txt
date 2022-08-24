@@ -57,6 +57,10 @@ Atributos-> Vão dentro das tags e auxliam a tag.:
         hierarquias:
            [0->] id | class
         OBS: Para burlar a regra, !important após, mas não é recomendado.
-    </head
+    </head>
 Para gerar esse conteúdo básico o vs te ajuda bastando chamar '!'.
 Validar HTML: validator.w3
+
+Headings:
+    Variações: 1 | 6 -> O número tem relação com tamanho e prioridade e está ligado com a semantica.
+    <h1>titulo</h1>
