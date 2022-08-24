@@ -95,9 +95,26 @@ Tags Html - links|imagens|etc
         <q cite=""></q>: Citar algo de alquém em cite podemos colocar o site ou a referencia por escrito para indicar.
         <span></span>: é uma tag invisivel que permite alterações rapidas em parte do codigo, aceita tanto, style quato class. [display: INLINE]
         <div></div>: Essa tag é um bloco que tem em seu display um block, ou seja se colocada junto com <p> quebraria a formatação, pode ser usada dentro e fora de <p>
-    Tags (Off <p>>):
+    Tags (Off <p>):
        <blockquote cite="">Aqui dentro posso ter um paragrafo.</blockquote> ->
             citando.
         <hr>: Exibe uma linha de separação, entre paragrafos.
         <code>Aqui dentro será exibido, em formato de código.</code>
         <pre></pre>: é um paragrafo que vai atender a todas as formatações passadas a ela, boa para reprentar codigos e expressões.
+    <ul></ul>: Os itens dentro do ul ficam em forma de lista formatos.
+    <li></li>: Deve acompanhar dentro do mesmo para indicar os itens da lista.
+
+    Separação de conteúdo:
+        <address></>: Para colocar endereços
+        <article></>: É um conteúdo que pode ser repetido, muito usado em comentários e descrições.
+            -> é recomendado sempre ter um  Heading.       
+        <aside></>: Side bars, caixas de texto que ficam de fora do texto principal.
+        <footer></>: Rodapé de partes do código.
+        <header></>: Representa um grupo que pode conter, cabeçalhos, logos, formulários e etc.
+        <hgroup></>: Agrupar cabeçalhos.
+        <main></>: Conteúdo principal de um site, ele não pode estar contido em nenhum local diferente do body.
+        <nav></>: Navegação
+        <section></>:é um seção generica onde geralmente está contido o titulo, quando não existir um elemento semantico.
+    
+    HTML com CSS [Pensamento]:
+        
