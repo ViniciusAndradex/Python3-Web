@@ -19,13 +19,17 @@ Estruturação do código perfeito, todos tem que ter:
         <head> -> Não aparece na tela mas trata dos metadados, especificar o que tem no html, tudo que está por baixo dos panos vem aqui
             <meta charset="utf-8" /> -> Não tem corpo, nós especificamos que queremos utilizar o utf-8 para que todas as letra e caracteres possem ser lidos.
             <title>titulo do documento e é obrigatorio no codigo.</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> -> Este meta é responsável por adaptar o tamanho da minha tela aos dispositivos que irão usar o site.
         </head>
 
         <body> -> Tudo que aparece no nosso site está aqui dentro.
+            <h>Cabeçalho<\h>
             <p>
                 Paragrafo.
             </p>
+            <span>Só apresenta mas só é modificado com css</span><br(\n)> 
         </body>
     </hmtl>
 
+Para gerar esse conteúdo básico o vs te ajuda bastando chamar '!'.
 Validar HTML: validator.w3
