@@ -13,16 +13,17 @@ Atributos: pode estar presenten em todas as tags e são como variáveis.
 OBS: Prestar atenção nas hierarquias.
 OBS2: HTML5 é case insensitive.
 Estruturação do código perfeito, todos tem que ter:
-    <!doctype html> -> Não é obrigatório porém para validar é recomendado fazer.
+
+    <!doctype html>
     <html lang="pt-BR">
-    <html> -> Todos são filhas dela e por tanto ela tem corpo e estão dentro da  mesma
-        <head> -> Não aparece na tela mas trata dos metadados, especificar o que tem no html, tudo que está por baixo dos panos vem aqui
-            <meta charset="utf-8" /> -> Não tem corpo, nós especificamos que queremos utilizar o utf-8 para que todas as letra e caracteres possem ser lidos.
+    <html>
+        <head>
+            <meta charset="utf-8" />
             <title>titulo do documento e é obrigatorio no codigo.</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"> -> Este meta é responsável por adaptar o tamanho da minha tela aos dispositivos que irão usar o site.
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
 
-        <body> -> Tudo que aparece no nosso site está aqui dentro.
+        <body>
             <h>Cabeçalho<\h>
             <p>
                 Paragrafo.
@@ -31,5 +32,31 @@ Estruturação do código perfeito, todos tem que ter:
         </body>
     </hmtl>
 
+Legenda: 
+    <!doctype html> -> Não é obrigatório porém para validar é recomendado fazer.    
+    <html lang="pt-BR"> -> Linguagem
+    <html> -> Todos são filhas dela e por tanto ela tem corpo e estão dentro da  mesma
+    <head> -> Não aparece na tela mas trata dos metadados, especificar o que tem no html, tudo que está por baixo dos panos vem aqui
+    <meta charset="utf-8" /> -> Não tem corpo, nós especificamos que queremos utilizar o utf-8 para que todas as letra e caracteres possem ser lidos.
+    <title>titulo do documento e é obrigatorio no codigo.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -> Este meta é responsável por adaptar o tamanho da minha tela aos dispositivos que irão usar o site.
+    <body> -> Tudo que aparece no nosso site está aqui dentro.
+    <h>Cabeçalho<\h>
+    <span>Só apresenta mas só é modificado com css</span><br(\n)>
+    <h1></h1>
+Atributos-> Vão dentro das tags e auxliam a tag.:
+    id="valor" -> Atribui um identificador a tag o que a torna unica
+    class="nome da class segunda class" -> Uma tag pode receber diversas classes, isso dara caracteristicas trazidas pelas classes.
+    <b></b>: O corpo se tranforma em negrito
+    <css>:
+    <head>
+        <style>codigos de css, podemos selecionar tags </style> -> responsavel por estilizar o codigo, nós indicamos qual elemento será estilizado.
+        seletores: é o nome da tag e dentro de uma tag de estilização pode receber estilos diversos bastando selecionar o nome da tag.
+            o seletor também pode ser o id de determinada tag o que evita uma generalização: #id
+        .nomedaclass{} -> Você vai modificar exatamente os que tem a class no seus atributos.
+        hierarquias:
+           [0->] id | class
+        OBS: Para burlar a regra, !important após, mas não é recomendado.
+    </head
 Para gerar esse conteúdo básico o vs te ajuda bastando chamar '!'.
 Validar HTML: validator.w3
