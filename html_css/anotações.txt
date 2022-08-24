@@ -74,5 +74,30 @@ Tags Html - links|imagens|etc
     links:
         <a href="link">a palavra ou botão que eu irei me redirecionar</a> -> Gera um link um clicavel
             atributos:
-                download:
-                href
+                download: recebe uma imagem e ao clicar faz o download.
+                href:Recebe url, que através do click permite a abertura dos sites.
+                hreflang: também recebe url, mas setta a linguagem de escrita.
+                target: indica onde será aberto o link:
+                    _self: Na mesma tela de pesquisa
+                    _blanck: Nova janela ou aba dependendo do usuário
+                    _parent: Abre na mesma tela se nenhum tag pai se comportar como _self
+                    _top: Se não houver nenhuma tag pai, funciona como self se não segue o pai.
+                rel (SO): São alguns padrões da google para que o link criado posso seguir padrões como o de publicidade ou de não seguimento.
+    Tags <p></p>:
+        <img src="" alt="">: (Não tem corpo) põe uma imagem no site onde o src é o link da mesma podendo ser link ou path no sistema.
+        <img src="" alt="" (menos utilizado) width="" height=""> : Altura e largura
+        <del></del | <s></s> / <ins></ins><u></u>: Del exclui [Risca a palavra] de forma semantica, ou seja, da a entender que exlui | s é só um risco.
+            e ins inser[sublinha indicando inserção] de forma semantica indica que fez a substituição e u sublinha.
+        <small></small>: diminui o texto
+        <sup></sup> | <sub></sub>: eleva um caracter | abaixa caracter 
+        <br>: Quebra linha.
+        OBS: O meu texto não modifica a não ser que eu utilize tags para isso.
+        <q cite=""></q>: Citar algo de alquém em cite podemos colocar o site ou a referencia por escrito para indicar.
+        <span></span>: é uma tag invisivel que permite alterações rapidas em parte do codigo, aceita tanto, style quato class. [display: INLINE]
+        <div></div>: Essa tag é um bloco que tem em seu display um block, ou seja se colocada junto com <p> quebraria a formatação, pode ser usada dentro e fora de <p>
+    Tags (Off <p>>):
+       <blockquote cite="">Aqui dentro posso ter um paragrafo.</blockquote> ->
+            citando.
+        <hr>: Exibe uma linha de separação, entre paragrafos.
+        <code>Aqui dentro será exibido, em formato de código.</code>
+        <pre></pre>: é um paragrafo que vai atender a todas as formatações passadas a ela, boa para reprentar codigos e expressões.
