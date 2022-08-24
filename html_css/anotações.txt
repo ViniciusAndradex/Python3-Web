@@ -64,3 +64,15 @@ Validar HTML: validator.w3
 Headings:
     Variações: 1 | 6 -> O número tem relação com tamanho e prioridade e está ligado com a semantica.
     <h1>titulo</h1>
+
+Tags Html - links|imagens|etc
+    tags - Podem receber style.
+    <b> / <strong>: Apesar de ambas deixarem em negrito, o strong é utilizado em sentido semantico e o bold apenas escurece a palavra.
+        Utilização: <b>>: Negrito | <strong>: Falar mais forte | 
+    <i> / <em>: Ambas deixam em italico
+        utilização: <i>: Itálico | <em>: dar enfase. -> Importante para os leitores de tela!
+    links:
+        <a href="link">a palavra ou botão que eu irei me redirecionar</a> -> Gera um link um clicavel
+            atributos:
+                download:
+                href
