@@ -174,5 +174,5 @@ Tags Html - links|imagens|etc
             {max-width: 100%;
             overflow: auto;} esse comados fazem com que um elemento do meu site que ultrapasse o tamanho da tela tenha a sua propria rolagem.
 
-    Formularios e inputs:
-        
+    Formularios e inputs [Unão back-front]:
+        <form action="local para onde vou enviar os Formularios"></> [Proibido aninhar forms]: Possui display: block.
