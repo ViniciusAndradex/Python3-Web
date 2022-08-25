@@ -124,3 +124,31 @@ Tags Html - links|imagens|etc
         display: permite mudar o tipo de posionamento.
         justify-content: Um maneira de deixar justificado
             space-between: Joga um para direita e outro para esquerda.
+
+    CSS Box-model:
+        Se não indicar um tamanho em width e height: O back e outras funções pegam toda a tela.
+        margin: responsavel por evitar colisões de dados é uma maneira de afastar os conteudos. as margens não se somam sempre a maior se sobrepõe deixando a evitando um distanciamento absurdo.
+        border:borda do conteudo, pode ser configurado de algumas formas sendo elas de forma direta: border: tamanho | tipo de borda | cor, ou 
+            border-posicção-width: 10px;
+            border-color: firebrick;
+            border-posicção-style: groove; -> Podendo selecionar a cor de cada separadamente assim como o tamanho.
+        padding: extensão do conteudo, quando se acha necessário a alterações e mudança e, relação a distanciamento do conteudo em relação a borda mudamos o padding.
+            padding / margin: top  | right | bottom | left
+        
+        OBS: se definir o height e o width o bloco de conteudo ficara locado e não se adaptará.
+
+        content: conteudo.
+
+        box-sizing: border-box; Garante qie meu espaço será desse tamanho evitando uma constante mudança.
+
+        Background:
+            background-size: Ajusta uma imagem (cover)
+            background-position: posição da imagem no quadrante (top, left...)
+            background-image: url(link or image)
+
+        Recomendação do professor:
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
