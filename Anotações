@@ -838,3 +838,26 @@ Seção Básica:
                 Para mais de um tipo de retorno:
                     from typing import Union
                     def func() -> Union[int, boolean]:
+
+    DataCLasses:
+        O que são dataclasses? O módulo Dataclasses fornece um decorador e funções
+        para criar automaticamente métodos, como __init__(), __repr__(), __eq__ (etc)
+        em classes definidas pelo usuário.
+        Basicamente, dataclasses são syntax sugar para criar classes normais.
+        Foi originalmente descrito na PEP 557.
+        Adicionado na versão 3.7 do Python.
+        Leia a documentação: https://docs.python.org/pt-br/3/library/dataclasses.html
+        __post__init__(self): Executa logo após o init padrão.
+        No @ é possivel desativar os padrões criados.(eq=False e etc)
+
+        @dataclass(eq=True, repr=True, order=True, frozen=False, init=True)
+
+    Enum:
+        from enum import Enum
+
+        basta criar uma classes e todos os valores presentes ali será possivel de trabalhar com eles pois a analise sera
+        feita para o conjunto a exemplo de um if com diversas condições.
+
+    Iterator:
+        Estrutura de dados, essa aula foi criado para entender como as coisas acontecem por baixo dos panos, na aula nós
+        fazemos toda a estrutura por trás das listas.

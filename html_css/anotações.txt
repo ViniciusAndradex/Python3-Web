@@ -1,0 +1,154 @@
+ctrl+shift+op = open with live server, para visualizar em um 'site' 
+
+Criação: qualquernome.html
+Estrutura HTML: Arquivo de texto, onde a semantica indica como estara predispos
+to no site.
+
+<>: Abertrua de tag.
+</>: fechamento
+Tags sem corpo: </>
+Atributos: pode estar presenten em todas as tags e são como variáveis.
+    <escreve atributo="Jorge">
+
+OBS: Prestar atenção nas hierarquias.
+OBS2: HTML5 é case insensitive.
+Estruturação do código perfeito, todos tem que ter:
+
+    <!doctype html>
+    <html lang="pt-BR">
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>titulo do documento e é obrigatorio no codigo.</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+
+        <body>
+            <h>Cabeçalho<\h>
+            <p>
+                Paragrafo.
+            </p>
+            <span>Só apresenta mas só é modificado com css</span><br(\n)> 
+        </body>
+    </hmtl>
+
+Legenda: 
+    <!doctype html> -> Não é obrigatório porém para validar é recomendado fazer.    
+    <html lang="pt-BR"> -> Linguagem
+    <html> -> Todos são filhas dela e por tanto ela tem corpo e estão dentro da  mesma
+    <head> -> Não aparece na tela mas trata dos metadados, especificar o que tem no html, tudo que está por baixo dos panos vem aqui
+    <meta charset="utf-8" /> -> Não tem corpo, nós especificamos que queremos utilizar o utf-8 para que todas as letra e caracteres possem ser lidos.
+    <title>titulo do documento e é obrigatorio no codigo.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -> Este meta é responsável por adaptar o tamanho da minha tela aos dispositivos que irão usar o site.
+    <body> -> Tudo que aparece no nosso site está aqui dentro.
+    <h>Cabeçalho<\h>
+    <span>Só apresenta mas só é modificado com css</span><br(\n)>
+    <h1></h1>
+Atributos-> Vão dentro das tags e auxliam a tag.:
+    id="valor" -> Atribui um identificador a tag o que a torna unica
+    class="nome da class segunda class" -> Uma tag pode receber diversas classes, isso dara caracteristicas trazidas pelas classes.
+    <b></b>: O corpo se tranforma em negrito
+    <css>:
+    <head>
+        <style>codigos de css, podemos selecionar tags </style> -> responsavel por estilizar o codigo, nós indicamos qual elemento será estilizado.
+        seletores: é o nome da tag e dentro de uma tag de estilização pode receber estilos diversos bastando selecionar o nome da tag.
+            o seletor também pode ser o id de determinada tag o que evita uma generalização: #id
+        .nomedaclass{} -> Você vai modificar exatamente os que tem a class no seus atributos.
+        hierarquias:
+           [0->] id | class
+        OBS: Para burlar a regra, !important após, mas não é recomendado.
+    </head>
+Para gerar esse conteúdo básico o vs te ajuda bastando chamar '!'.
+Validar HTML: validator.w3
+
+Headings:
+    Variações: 1 | 6 -> O número tem relação com tamanho e prioridade e está ligado com a semantica.
+    <h1>titulo</h1>
+
+Tags Html - links|imagens|etc
+    tags - Podem receber style.
+    <b> / <strong>: Apesar de ambas deixarem em negrito, o strong é utilizado em sentido semantico e o bold apenas escurece a palavra.
+        Utilização: <b>>: Negrito | <strong>: Falar mais forte | 
+    <i> / <em>: Ambas deixam em italico
+        utilização: <i>: Itálico | <em>: dar enfase. -> Importante para os leitores de tela!
+    links:
+        <a href="link">a palavra ou botão que eu irei me redirecionar</a> -> Gera um link um clicavel
+            atributos:
+                download: recebe uma imagem e ao clicar faz o download.
+                href:Recebe url, que através do click permite a abertura dos sites.
+                hreflang: também recebe url, mas setta a linguagem de escrita.
+                target: indica onde será aberto o link:
+                    _self: Na mesma tela de pesquisa
+                    _blanck: Nova janela ou aba dependendo do usuário
+                    _parent: Abre na mesma tela se nenhum tag pai se comportar como _self
+                    _top: Se não houver nenhuma tag pai, funciona como self se não segue o pai.
+                rel (SO): São alguns padrões da google para que o link criado posso seguir padrões como o de publicidade ou de não seguimento.
+    Tags <p></p>:
+        <img src="" alt="">: (Não tem corpo) põe uma imagem no site onde o src é o link da mesma podendo ser link ou path no sistema.
+        <img src="" alt="" (menos utilizado) width="" height=""> : Altura e largura
+        <del></del | <s></s> / <ins></ins><u></u>: Del exclui [Risca a palavra] de forma semantica, ou seja, da a entender que exlui | s é só um risco.
+            e ins inser[sublinha indicando inserção] de forma semantica indica que fez a substituição e u sublinha.
+        <small></small>: diminui o texto
+        <sup></sup> | <sub></sub>: eleva um caracter | abaixa caracter 
+        <br>: Quebra linha.
+        OBS: O meu texto não modifica a não ser que eu utilize tags para isso.
+        <q cite=""></q>: Citar algo de alquém em cite podemos colocar o site ou a referencia por escrito para indicar.
+        <span></span>: é uma tag invisivel que permite alterações rapidas em parte do codigo, aceita tanto, style quato class. [display: INLINE]
+        <div></div>: Essa tag é um bloco que tem em seu display um block, ou seja se colocada junto com <p> quebraria a formatação, pode ser usada dentro e fora de <p>
+    Tags (Off <p>):
+       <blockquote cite="">Aqui dentro posso ter um paragrafo.</blockquote> ->
+            citando.
+        <hr>: Exibe uma linha de separação, entre paragrafos.
+        <code>Aqui dentro será exibido, em formato de código.</code>
+        <pre></pre>: é um paragrafo que vai atender a todas as formatações passadas a ela, boa para reprentar codigos e expressões.
+    <ul></ul>: Os itens dentro do ul ficam em forma de lista formatos.
+    <li></li>: Deve acompanhar dentro do mesmo para indicar os itens da lista.
+
+    Separação de conteúdo:
+        <address></>: Para colocar endereços
+        <article></>: É um conteúdo que pode ser repetido, muito usado em comentários e descrições.
+            -> é recomendado sempre ter um  Heading.       
+        <aside></>: Side bars, caixas de texto que ficam de fora do texto principal.
+        <footer></>: Rodapé de partes do código.
+        <header></>: Representa um grupo que pode conter, cabeçalhos, logos, formulários e etc.
+        <hgroup></>: Agrupar cabeçalhos.
+        <main></>: Conteúdo principal de um site, ele não pode estar contido em nenhum local diferente do body.
+        <nav></>: Navegação
+        <section></>:é um seção generica onde geralmente está contido o titulo, quando não existir um elemento semantico.
+    
+    HTML com CSS [Pensamento]:
+        padding-top: 15px;
+        padding-left: 15px;   -> É responsável por mover a posição na tela por determinados valores.
+        padding-bottom: 15px; 
+        padding: {top} [right] {bottom} [left]; na ordem.
+        display: permite mudar o tipo de posionamento.
+        justify-content: Um maneira de deixar justificado
+            space-between: Joga um para direita e outro para esquerda.
+
+    CSS Box-model:
+        Se não indicar um tamanho em width e height: O back e outras funções pegam toda a tela.
+        margin: responsavel por evitar colisões de dados é uma maneira de afastar os conteudos. as margens não se somam sempre a maior se sobrepõe deixando a evitando um distanciamento absurdo.
+        border:borda do conteudo, pode ser configurado de algumas formas sendo elas de forma direta: border: tamanho | tipo de borda | cor, ou 
+            border-posicção-width: 10px;
+            border-color: firebrick;
+            border-posicção-style: groove; -> Podendo selecionar a cor de cada separadamente assim como o tamanho.
+        padding: extensão do conteudo, quando se acha necessário a alterações e mudança e, relação a distanciamento do conteudo em relação a borda mudamos o padding.
+            padding / margin: top  | right | bottom | left
+        
+        OBS: se definir o height e o width o bloco de conteudo ficara locado e não se adaptará.
+
+        content: conteudo.
+
+        box-sizing: border-box; Garante qie meu espaço será desse tamanho evitando uma constante mudança.
+
+        Background:
+            background-size: Ajusta uma imagem (cover)
+            background-position: posição da imagem no quadrante (top, left...)
+            background-image: url(link or image)
+
+        Recomendação do professor:
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
