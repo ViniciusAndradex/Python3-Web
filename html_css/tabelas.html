@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .responsive-table { 
+            max-width: 100%;
+            overflow: auto;
+        }
+
+        tfoot td, table th {
+            background: aqua;
+        }
+
+        tfoot td {
+            font-style: italic;
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit.</p>
+    <div class="responsive-table">
+    <table>
+        <caption>uma descrição</caption>
+        <thead>
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <td>Corpo 1</td>
+            <td>Corpo 2</td>
+            <td>Corpo 3</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>Corpo 1</td>
+            <td>Corpo 2</td>
+            <td>Corpo 3</td>
+        </tr>
+    </tbody>
+        <tr>
+            <td colspan="2" rowspan="2">aqui</td>
+            <td>Corpo 3</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2" rowspan="2"></td>
+            <td>Total:</td>
+        </tr>
+        <tr>
+            <td>R$555</td>
+        </tr>
+        
+    </tfoot>
+    </table>
+</div>
+</body>
+</html>
