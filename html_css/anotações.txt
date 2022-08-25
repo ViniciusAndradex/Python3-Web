@@ -117,4 +117,10 @@ Tags Html - links|imagens|etc
         <section></>:é um seção generica onde geralmente está contido o titulo, quando não existir um elemento semantico.
     
     HTML com CSS [Pensamento]:
-        
+        padding-top: 15px;
+        padding-left: 15px;   -> É responsável por mover a posição na tela por determinados valores.
+        padding-bottom: 15px; 
+        padding: {top} [right] {bottom} [left]; na ordem.
+        display: permite mudar o tipo de posionamento.
+        justify-content: Um maneira de deixar justificado
+            space-between: Joga um para direita e outro para esquerda.
