@@ -176,3 +176,34 @@ Tags Html - links|imagens|etc
 
     Formularios e inputs [Unão back-front]:
         <form action="local para onde vou enviar os Formularios"></> [Proibido aninhar forms]: Possui display: block.
+        <fieldset>: Agrupar
+        <legend>: Legenda
+        <input type="">
+
+        https://www.w3schools.com/html/html_form_input_types.asp
+
+
+        <label for="id do input"></>: é o rotulo do input, utilizasse pois da para estilizalo.>
+        label {
+            cursor: pointer;;
+        } -> Desta forma meu cursor se torna clicavel.
+        <input types="" id="" name="nome do input, quem utiliza normalmente é o back" placeholder="um indicação invisivel para o campo" value="valor do input, ou seja, o no back-end será o valor que ele receberá, aqui tbm é possível setar um valor padrão, já é ativo por padrão ao digitar do user.">: 
+        text: para quando não existe um em especifico.
+
+        required: Obrigada a marcar o campo antes de um envio.
+
+        <button type="">
+        type: 
+            submit -> Envia.
+            reset -> reseta o campo.
+        
+        input type:
+        checkbox:
+            caixa de opção
+        radio:
+            também é caixa de texto porém só permite marcar 1.
+
+
+        
+
+

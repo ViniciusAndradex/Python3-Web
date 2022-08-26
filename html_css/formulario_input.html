@@ -10,13 +10,48 @@
         body {
             font-family: sans-serif;
         }
+        label {
+            cursor: pointer;;
+        }
     </style>
 
 </head>
 
 <body>
-    <form action="#" method="get">
+    <form action="#" target="_blank" method="get">
+        <p>Meu Formulario</p>
+        <p>
+            <label for="nome">Nome:</label> 
+            <input type="text" id="nome" name="nome" placeholder="seu nome" value="" required>
+        </p>
         
+        <p>
+
+            <label for="dev">Sou um dev</label> 
+            <input type="checkbox" id="dev" name="dev" value=""><br>
+            <label for="dev1">Sou um dev1</label> 
+            <input type="checkbox" id="dev1" name="dev" value=""><br>
+            <label for="dev2">Sou um dev2</label> 
+            <input type="checkbox" id="dev2" name="dev" value=""><br>
+            
+        </p>
+
+        <p>
+            Genero:<br>
+            <label for="não-binário">não-binário</label> 
+            <input type="radio" id="não-binário" name="genero" value=""><br>
+            <label for="masculino">masculino</label> 
+            <input type="radio" id="masculino" name="genero" value=""><br>
+            <label for="feminino">feminino</label> 
+            <input type="radio" id="dev2" name="genero" value=""><br>
+            
+        </p>
+        
+        <p>
+            <button type="reset">resetar</button>
+            <button type="submit">enviar</button>
+
+        </p>
     </form>
 </body>
 
