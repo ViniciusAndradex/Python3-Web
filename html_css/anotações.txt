@@ -228,7 +228,32 @@ Tags Html - links|imagens|etc
       <textarea>: Apresenta uma box para ser escrita.
       
 ---------------------------------------------------------------
-			CSS	
-			
+			      CSS
+BP: Utilizar o css em uma pasta separada e sempre dar preferência a classes.
 
+Linkar:
+	link: o tipo que você está atrás.
+	<link rel="stylesheet" href="./caminho até o meu main">
+	no css a última regra sempre será a carregada, portatno acontece uma sobreposição.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
