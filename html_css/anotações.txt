@@ -202,8 +202,33 @@ Tags Html - links|imagens|etc
             caixa de opção
         radio:
             também é caixa de texto porém só permite marcar 1.
-
-
+	date: solicita uma data e já mostra um caledário. 		PlaceHolder padrão.
+	datetime-local: Apresenta uma caixa para colocar hora e data.
+	time:	Apresenta uma caixa para por as horas
+	color: Apresenta uma paleta de cor.
+	email: Apresenta um box para adicionar um e-mail e existe um validação miníma.
+	file: Box para solicitação de arquivo
+	accept="você indica que tipo de extensão o seu box aceita"[image/* aceita todos os tipos de imagem.]
+        multiple: aceita mais de um arquivo.
+        number: Apresenta uma caixa para adição de números.
+        min="" - max="" - step=""
+        password: caixa para receber senha.
+        range: apresenta uma barra para valores.
+        <datalist><option>value="" label=""</></> //Não funcionou no firefox.
+        url: solicita uma url mas tem uma validação miníma.
+        search: funciona como semântica para o site pois indica exatamente o que você está em busca.
         
+      <select><option></></>: selecionar um valor é uma estrutura separada do input.
+      multiple para Multiplas seleções.
+      	<option>: value="o valor passado ao server é o que eestá aqui dentro" label="valor que sera apresentado">Fora é somente para o user.
+      		selected: a opção já vem marcada
+      		disabled: anula uma opção.
+      	<optgroup>: põe todas as option em um grupo.
+      	
+      <textarea>: Apresenta uma box para ser escrita.
+      
+---------------------------------------------------------------
+			CSS	
+			
 
 
