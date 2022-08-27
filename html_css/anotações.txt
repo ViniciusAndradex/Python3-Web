@@ -234,14 +234,33 @@ BP: Utilizar o css em uma pasta separada e sempre dar preferência a classes.
 Linkar:
 	link: o tipo que você está atrás.
 	<link rel="stylesheet" href="./caminho até o meu main">
-	no css a última regra sempre será a carregada, portatno acontece uma sobreposição.
+	no css a última regra sempre será a carregada, portanto acontece uma sobreposição.
 	
+Seletores:
+*: all - Utilizado normalmente para margin:0; | padding: 0;
+seleção de descedente: body section div... quanto mais opções mais especifico a estilização.
+	body div section p,
+	body div section h1{}
+	.main h2.h {} -> estou selecionando o h2 da classe h.
+	.pai .filho-> seleciona o filho
+	.pai -> Seleciona pai e filho
+	.pai.filho -> um elemento que seja filho de pai e filho.
+	.pai > .filho -> quer os filhos do pai. child selector.
 	
+Seletores de irmãos:
+	adjacent sibling selector:
+	.class tag1+tag2: faz a seleção da tag2 para dar o estilo ou seja seleciona o adjascente a ele.
 	
-	
-	
-	
-	
+	general sibling selector:
+	.class tag1~tag2: todas as tag2 depois da 1.
+	atributo: [meuatributo="valor"]{} esse atributo pode ser colocado do lado das tags.
+	[meuatributo~="valor1"] { -> para trabalhar com valores, podemos fazer esse tipo de selação que são todos que possuem esses valores já que levando em conta que o atributo pode receber mais de um valor.
+    		color: royalblue
+	}
+	[atributo^="valor"] -> se o atributo começar com valor e pode ser a sequência e não necessariamente a palavra
+	[atributo $="valor"] -> termina com.
+	[atributo*="valor"] -> se contem essa sequência tá valendo.
+
 	
 	
 	

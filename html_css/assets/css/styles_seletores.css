@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* p {
+    color: red;
+}
+body div section p,
+body div section h1 {
+    color: green;
+} */
+
+/* .color-red {
+    color: red;
+}
+
+.main-content .heading {
+    font-style: italic;
+    color: darkcyan;
+} */
+/* div {
+    color: initial;
+    margin-left: 20px;
+}
+
+.pai > .filho > .filho{
+    color: blue;
+} */
+
+.pai h1+p{
+    color: red;
+}
+
+.pai h1~p {
+    color: forestgreen
+}
+
+[meuatributo~="valor"] {
+    color: royalblue
+}
+
+[checked] {
+    width: 50px;
+    height: 50px;
+}
+
+[meuatributo^="valor"] {
+    color: blueviolet;
+}
+
+[meuatributo$="or"] {
+    color: darkcyan;
+}
+
+[meuatributo*="or2"] {
+    background: black;
+    width: 125px;
+}
