@@ -261,15 +261,23 @@ Seletores de irmãos:
 	[atributo $="valor"] -> termina com.
 	[atributo*="valor"] -> se contem essa sequência tá valendo.
 
+Pseudoclasses - estado dos elementos.:
+	seleção:pseudo
+	:hover - diferenciar ao passar o mouse. INDICAR  oque seria diferente, background, color, font...
+{transition -> quando o mouse passar em um elemento com hover é possível aplicar um efeito ao mesmo.}
+	<a>:
+	:link - permite que links que nunca forma visitados fiquem de outra cor.
+	:visited - links que já foram visitados.
+	a: hover - modifica o link de acordo com a estilização do hover. {text-decoration: enfeites do link ou frase.}
+	:active - indica se o link está sendo clicado
+	input-text:
+	:focus - é possível estilizar quando o meu input estiver sendo utilizado. {box-shadow: tamanho do shadow {2, 3, 4 valores} cor}
+	:disabled -> o campo estará desabilitado.
+	:enabled -> indica que está ativo.
+	:first/-child: Busca o primeiro ou o último filho para estilizar.
+	:required
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	:not() -> com esse pseudo é possível negar a estilização para opções mais gerais.
 	
 	
 	
