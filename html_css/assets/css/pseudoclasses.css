@@ -1,0 +1,67 @@
+.heading {
+    transition: all 1.5s ease-in-out;
+    width: 115px;
+}
+
+.heading:hover{
+    background: red;
+    width: 115px;
+}
+
+a {
+    color: orange;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: firebrick;
+}
+
+a:hover {
+    background: darkblue;
+    color: wheat;
+    text-decoration: none;
+}
+
+a:active {
+    background: darkslategray;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus {
+    border: 1px solid black;
+    outline: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+input:disabled {
+    background: rgba(0,0,0,0.4);
+    cursor: not-allowed;
+}
+input:not(disabled) {
+    background: rgba(0,0,0,0.4);
+    cursor: not-allowed;
+}
+
+input:checked {
+    width: 50px;
+    height: 50px;
+}
+
+input:checked+p {
+    background: chartreuse;
+    color: brown;
+    width: 100px;
+}
+
+.pai .lista li:first-child {
+    background-color: burlywood;
+}
+
+p:not(.ph) {
+    color: blue;
+}
