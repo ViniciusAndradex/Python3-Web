@@ -278,8 +278,15 @@ Pseudoclasses - estado dos elementos.:
 	:required
 	
 	:not() -> com esse pseudo é possível negar a estilização para opções mais gerais.
+	Só funciona com irmãos.
+	:nth-child() -> seleciona um grupo de irmãos.
+	Baseado nos indices dos irmãos começando de 1
 	
-	
+	possibilidades:
+	even - seleciona todos os pares
+	odd: impares
+	(NUMBERn) - A estilização ocorre a cada Number, exemplo de 3 em 3.
+	(NUMBERn+NUMBER2) - Começando de NUMBER2 de a NUMBER.
 	
 	
 	
