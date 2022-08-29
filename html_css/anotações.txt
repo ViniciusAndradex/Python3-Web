@@ -288,6 +288,12 @@ Pseudoclasses - estado dos elementos.:
 	(NUMBERn) - A estilização ocorre a cada Number, exemplo de 3 em 3.
 	(NUMBERn+NUMBER2) - Começando de NUMBER2 de a NUMBER.
 	
+PSEUDO ELEMENTS
+	Os elementos adicionados a partir dos pseudos recebem todas as estilizações do css também.
+	::after - Aparecerá um elemento após o indicado.
+	::before - Adiciona antes do elemento.
+	::first-letter - A primeira letra.
+	::first-line - primeira linha.
+	::selection - Os items que estão sendo selecionados no momento.
+	::placeholder - modifica os placeholders
 	
-	
-

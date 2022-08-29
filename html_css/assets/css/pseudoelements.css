@@ -1,0 +1,31 @@
+ul li::after {
+    background-color: black;
+    content: ' - ';
+    color: aliceblue;
+}
+
+ul li::before {
+    background-color: aqua;
+    content: ' # ';
+}
+
+p::first-letter {
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::first-line {
+    color: blueviolet;
+}
+
+p::selection {
+    background-color: darkorchid;
+    color: chartreuse;
+}
+::placeholder {
+    font-size: 15px;
+    background-color: cadetblue;
+    color: blueviolet;
+}
