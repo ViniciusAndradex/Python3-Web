@@ -1,0 +1,19 @@
+body#b.b p#p.p {
+    background: cyan;
+}
+
+#p {
+    background: red;
+}
+
+#p.p {
+    background: yellow;
+}
+
+p#p.p {
+    background: blue;
+}
+
+p {
+    background: blueviolet !important;
+}

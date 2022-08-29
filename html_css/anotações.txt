@@ -297,3 +297,33 @@ PSEUDO ELEMENTS
 	::selection - Os items que estão sendo selecionados no momento.
 	::placeholder - modifica os placeholders
 	
+-----------------------------------------------------------
+			ESPECIFICADORES
+Ordem de Precedência:
+ID | Classes e pseudoclasses | elementos e peseudo-elementos [são os modificadores, b, a, body]
+
+O specificity indica a quantidade de cada elemento e de acordo com a ordem de precedência você faz uma coisa no lugar de outra e os valores indicam tamanho na prioridade. 	Exmeplo: specificity(1, 1, 0) é menor que specificity(1, 1, 1).
+A tag style é a mais especifica das minhas opções e portanto ela sempre sobrepõe tudo.
+Exceção: !important na opção ela será exibida e 
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
