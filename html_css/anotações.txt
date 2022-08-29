@@ -313,8 +313,29 @@ https://www.sitepoint.com/css-inheritance-introduction/
 Algumas propriedades do css são herdadas pelos filhos. {Exemplos no arquivo: herança.css}
 Para que os filhos não herdem alguma caracteristica basta, utilizar o 'initial' e para obrigar a herança 'inherit'.
 
-			
-			
+---------------------------------------------------------
+			Box Model
+display: 
+	block: ocupa todo o espaço [Padrão para algumas opções].
+	inline: o meu bloco se tranforma continuo e passa a não receber alterações de tamanho ou background pois a mesma não possui mais um espaço.
+	overflow: quando um texto está excedendo o meu limite de tamanho eu consigo esconder para que não quebre o site. overflow-[x[altura]-y[largura]]: 
+	hidden[esconde] 
+	scroll[rolagem] 
+	auto[só apresenta a barra caso ultrapasse].
+Propriedades Conteúdo:
+	width: largura.
+	height: altura.
+	max/min-height: Altura maximo/minimo.
+	max/min-width: Largura maxima/minimo.
+	margin: 0 auto; -> Ajusta minha div sempre ao meio.
+	box-sizing: tipo de box, que influencia no tamanho da mesma se baseando em todas as possibilidades de medida. CONTENT-BOX a minha box se somará a padding, border e margin.
+-> Cada um controla suas propriedades apartir daqui.
+padding - Enchimento do conteúdo
+border - bordar do bloco. Tipos: solid | dotted | dodouble and others.
+margin - Afasta os demais blocos
+	Recomendado: border-box - Pois o mesmo automaticamente soma a borda e o padding ao conteúdo.
+-> Design responsivo:
+	Esse desingn é feito baseado em % já que é possível delimitar o max e o minimo em tamanho para o meu site. {Exemplo - boxmodel.html/css}		
 			
 			
 			
