@@ -861,3 +861,26 @@ Seção Básica:
     Iterator:
         Estrutura de dados, essa aula foi criado para entender como as coisas acontecem por baixo dos panos, na aula nós
         fazemos toda a estrutura por trás das listas.
+
+Display:
+	block: ocupa todo um espaço [padrão para Div].
+	inline: ocupa somente parte de um espaço porém não possui tamanho e sim segue um fluxo de texto.
+	inline-block: Consegue fazer uma delimitação do bloco e permite que numa mesma linha outros objetos ocupem o espaço.[estranho pois tem a possibilidade dos espaços como se fosse um texto.]
+	flix:
+	grid:
+Float:
+	Flutuamento, o que acontece é que você indica ao navegador que só quer utilizar o espaço do proprio bloco e que ele pode fazer o que quiser nos espaços ao lado. OBS: Altera a condição das margens, elas passam a se somar. {Essa caracteristica, pode causar problemas pois outros objetos também vão possuir a caracteristica.}
+Para Evitar este problema é necessário criar um clear logo após a grid e para isso fazemos a propria grid limpar.
+        .grid::after {
+    		content: '';
+    		display: block;
+    		clear: both;
+	}
+        
+        
+        
+        
+        
+        
+        
+        
