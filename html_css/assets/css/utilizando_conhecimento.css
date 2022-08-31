@@ -27,6 +27,9 @@
     background: red;
 }
 
+.grid #especial {
+    background: yellow;
+}
 @media (max-width: 568px) {
     .grid .col {
         width: 100%;
@@ -38,4 +41,19 @@
         width: 50%;
     }
 
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+}
+
+header ul {
+    background: rgba(0, 0, 0, 0.6);
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    list-style: none;
+    position: fixed;
 }

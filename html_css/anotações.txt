@@ -336,11 +336,73 @@ margin - Afasta os demais blocos
 	Recomendado: border-box - Pois o mesmo automaticamente soma a borda e o padding ao conteúdo.
 -> Design responsivo:
 	Esse desingn é feito baseado em % já que é possível delimitar o max e o minimo em tamanho para o meu site. {Exemplo - boxmodel.html/css}		
+
+----------------------------------------------------------
+Display:
+	block: ocupa todo um espaço [padrão para Div].
+	inline: ocupa somente parte de um espaço porém não possui tamanho e sim segue um fluxo de texto.
+	inline-block: Consegue fazer uma delimitação do bloco e permite que numa mesma linha outros objetos ocupem o espaço.[estranho pois tem a possibilidade dos espaços como se fosse um texto.]
+	flix:
+	grid:
+Float:
+	Flutuamento, o que acontece é que você indica ao navegador que só quer utilizar o espaço do proprio bloco e que ele pode fazer o que quiser nos espaços ao lado. OBS: Altera a condição das margens, elas passam a se somar. {Essa caracteristica, pode causar problemas pois outros objetos também vão possuir a caracteristica.}
+Para Evitar este problema é necessário criar um clear logo após a grid e para isso fazemos a propria grid limpar.
+        .grid::after {
+    		content: '';
+    		display: block;
+    		clear: both;
+	}
+        
+Unidades:
+	cm | mm | in | px | pt | pc -> Unidades absolutas.
+Relativas (se baseiam na classe pai):
+	em - Multiplica pelo valor do pai.
+	rem - Se baseia no elemento root (html)
+	vw/vh - 1% do view port [tamanho do navegador].
+	% - % do pai.
+	vmin - 1% da menor dimensão seja ela altura ou largua
+	vmax - 1% da maior dimensão seja ela altura ou largua
+Ancora com link [id]:
+	<a href="#id"></>
+Dica: scroll-behavior: smooth; Faz com que ao clicar em uma conteúdo de sua própria página ocorra uma rolagem mais suave.
+        
+Propriedades de texto:
+	font-size 
+	font-style
+	font-weight
+	direction: rtl / ltr
+	letter-spacing: Espaçamento entre as letras
+	word-spacing
+	line-height: Altura da linha
+	text-align
+	text-decoration: Opções como underline, overline e etc.
+	text-shadow: 2 padrões | 3 padrões (esfumaça) | COR
+	text-transform - lowercas | capitalize e etc.
+	https://www.w3schools.com/css/css_text.asp
+	
+Posicionamento:
+	position: Posicionamento do bloco.
+		static - travado.
+		relative - permite modificação.
+		
+		absolute - posição absotula, fixa o objeto na posição indicada. [Utilizado para fazer janelas]. {A hierarquia conta.}
+	É possível modificar a hierarquia com o 'z-index' o maior fica na camada de cima. OBS: um objeto que possui um relative e tem dentro dele um absolute o mesmo só pode se adpatar dentro do bloco pai.
+	fixed: Diferente de absolute, ele fixa porém está fixo dentro de todo o site [comercial/menu].
+	sticky - Fixa um elemento até ter outro.
+		
+	
+ Modificação:
+ 	top, left, right, bottom
+	
 			
+----------------------------------------------------------
+Media queries e Break Point:
+	Media queries: São condicionais para estilização baseadas nos tamanho das telas, o que evita uma quebra de layout.
+	Break Point: Tamanhos que demarcamos para estilização.
+	
+- not | ant | only | or		
 			
-			
-			
-			
+@media dispositivo(opcional) condicional (min/max -width) |(Opcional) condicional (...)  {}			
 			
 			
 			
