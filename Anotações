@@ -904,6 +904,20 @@ Propriedades de texto:
 	text-transform - lowercas | capitalize e etc.
 	https://www.w3schools.com/css/css_text.asp
 	
+Posicionamento:
+	position: Posicionamento do bloco.
+		static - travado.
+		relative - permite modificação.
+		
+		absolute - posição absotula, fixa o objeto na posição indicada. [Utilizado para fazer janelas]. {A hierarquia conta.}
+	É possível modificar a hierarquia com o 'z-index' o maior fica na camada de cima. OBS: um objeto que possui um relative e tem dentro dele um absolute o mesmo só pode se adpatar dentro do bloco pai.
+	fixed: Diferente de absolute, ele fixa porém está fixo dentro de todo o site [comercial/menu].
+	sticky - Fixa um elemento até ter outro.
+		
+	
+ Modificação:
+ 	top, left, right, bottom
+	
 	
 	
 	
