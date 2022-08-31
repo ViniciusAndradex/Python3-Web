@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.pai {
+    width: 50rem;
+    height: 100vh;
+    background: yellow;
+    padding: 10px;
+}
+
+.pai > div {
+    width: 50%;
+    height: 50rem;
+    background: blue;
+}
+
+p {
+    font-size: 2vmax;
+}
+
+.color1 {
+    background: turquoise;
+}
+
+.color2 {
+    background: violet;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    color: beige;
+}
+
+header a:hover {
+    color: aliceblue;
+    font-size: 1.6em;
+    text-decoration: none;
+}

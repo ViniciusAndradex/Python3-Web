@@ -877,10 +877,18 @@ Para Evitar este problema é necessário criar um clear logo após a grid e para
     		clear: both;
 	}
         
-        
-        
-        
-        
+Unidades:
+	cm | mm | in | px | pt | pc -> Unidades absolutas.
+Relativas (se baseiam na classe pai):
+	em - Multiplica pelo valor do pai.
+	rem - Se baseia no elemento root (html)
+	vw/vh - 1% do view port [tamanho do navegador].
+	% - % do pai.
+	vmin - 1% da menor dimensão seja ela altura ou largua
+	vmax - 1% da maior dimensão seja ela altura ou largua
+Ancora com link [id]:
+	<a href="#id"></>
+Dica: scroll-behavior: smooth; Faz com que ao clicar em uma conteúdo de sua própria página ocorra uma rolagem mais suave.
         
         
         
