@@ -890,5 +890,25 @@ Ancora com link [id]:
 	<a href="#id"></>
 Dica: scroll-behavior: smooth; Faz com que ao clicar em uma conteúdo de sua própria página ocorra uma rolagem mais suave.
         
+Propriedades de texto:
+	font-size 
+	font-style
+	font-weight
+	direction: rtl / ltr
+	letter-spacing: Espaçamento entre as letras
+	word-spacing
+	line-height: Altura da linha
+	text-align
+	text-decoration: Opções como underline, overline e etc.
+	text-shadow: 2 padrões | 3 padrões (esfumaça) | COR
+	text-transform - lowercas | capitalize e etc.
+	https://www.w3schools.com/css/css_text.asp
+	
+	
+	
+	
+	
+	
+		
         
         
