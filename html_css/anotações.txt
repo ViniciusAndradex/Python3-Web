@@ -404,8 +404,12 @@ Media queries e Break Point:
 			
 @media dispositivo(opcional) condicional (min/max -width) |(Opcional) condicional (...)  {}			
 			
-			
-			
+Border Radius [Elementos redondos ou Curvados]:
+    border-Posições que deseja-radius: indicamos um tamanho para a curvatura dos cantos;		
+
+Box shadow:
+    box-shadow: inset[sombreia para dentro do elemento] +right/-left +bottom/-top bluer | enchimento para sombra color.
+   
 			
 			
 			
