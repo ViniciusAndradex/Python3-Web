@@ -26,3 +26,9 @@ sleep(5)
 elemento = driver.find_element(By.XPATH, "//div/h2/i/..")
 
 assert "successfully" in elemento.text
+
+checkout = driver.find_element(By.XPATH, "//div/a/span/i")
+checkout.click()
+
+sleep(3)
+driver.quit()
