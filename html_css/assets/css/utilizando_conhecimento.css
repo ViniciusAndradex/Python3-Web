@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .grid {
+    max-width: 1200px;
     padding: 15px;
+    padding-top: 73px;
+    margin: 0 auto;
 }
 
 .grid::after {
@@ -25,35 +32,67 @@
     width: 100%;
     height: 100%;
     background: red;
+    border-radius: 15px 15px;
+    box-shadow: inset -10px 10px 10px rgba(54, 4, 182, 0.7), inset 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
-.grid #especial {
-    background: yellow;
+.menu {
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
 }
-@media (max-width: 568px) {
+
+.menu ul {
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.menu ul li {
+    float: left;
+} 
+
+.menu ul li a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: all 300ms ease-in-out; 
+
+}
+
+.menu ul li a:hover {
+    background: #333;
+}
+
+@media all and (max-width: 568px) {
     .grid .col {
         width: 100%;
     }
 }
 
-@media (min-width: 568px) and (max-width: 768px){
+@media all and (min-width: 568px) and (max-width: 768px){
     .grid .col {
         width: 50%;
     }
 
 }
 
-header img {
-    height: 50px;
-    width: 50px;
+.full-page {
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-top: 73px;
+    height: 100vh;
+    background: turquoise;
 }
 
-header ul {
-    background: rgba(0, 0, 0, 0.6);
-    background-size: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    list-style: none;
-    position: fixed;
+.full-page-content {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
 }
