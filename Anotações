@@ -597,8 +597,8 @@ Seção Básica:
     Métodos:
         def falar(self):
 
-        OBS: Variáveis criadas no escopo de um método são criadas de forma local.
-    OBS: valores passados a self estão de forma global na minha class.
+      	OBS: Variáveis criadas no escopo de um método são criadas de forma local.
+    	OBS: valores passados a self estão de forma global na minha class.
 
     Podemos criar variáveis da própria classe:
         var = x -> de forma normal
