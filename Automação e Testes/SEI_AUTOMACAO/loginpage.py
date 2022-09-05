@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 class LoginPage:
-
+    
     def escrever_mail(self, driver ,mail):
         email = driver.find_element(By.ID, "txtEmail")
         email.send_keys(mail)
