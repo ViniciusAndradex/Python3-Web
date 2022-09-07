@@ -8,8 +8,7 @@ class TestePage:
     
     def write_input(self, driver):
         write = driver.find_element(By.TAG_NAME, "input")
-        frase = input('Digite algo: ')
-        write.send_keys(frase)
+        write.send_keys("frase")
 
     def click(self, driver, elemento):
         clicar = driver.find_element(By.TAG_NAME, elemento)
