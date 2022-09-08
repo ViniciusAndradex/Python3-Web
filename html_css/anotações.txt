@@ -411,8 +411,30 @@ Box shadow:
     box-shadow: inset[sombreia para dentro do elemento] +right/-left +bottom/-top bluer | enchimento para sombra color.
    
 			
-			
-			
-			
-			
+Flexbox:
+	O flexbox é uma maneira mais limpa do que o float e permite muitas configurações para o container(box).
+
+Display: Flex - 
+	Ao utilizar esse display ganhamos algumas caracteristicas sem precisar fazer nada:
+  flex-direction: row; - Alinha no eixo na fileira principal [| -> vertical] {column}.
+  justify-content: flex-start; -> Eixo principal
+  align-items: stretch; -> Eixo perpendicular
+  
+gap: espaçamento entre os elementos do box
+flex-wrap: wrap; -> Esse configuração permite uma quebra de linha caso o conteúdo exceda a tela.	
+align-content -> Alinha o conteúdo.
+flex-grow -> oermite a distribuição do espaço em branco
+flex-basis -> reserva um espaço x na minha tela e permite uma subdivisão entre os blocos desse espaço.
+flex-shrink -> faz com que o meu conteudo faça um overflow pois não permite a diminuição do tamanho.
+flex: grow | shrink | basis
+order -> Ordenar meus items.
+
+--------------------------------------------------------------
+https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+--------------------------------------------------------------
+
+
+
+
 
