@@ -52,3 +52,19 @@ class RegisterNl():
         email.send_keys("jorginho2@kdjdjd.kancsk")
         register = driver.find_element(By.ID, "sc_b_ins_b")
         register.click()
+
+    @staticmethod
+    def write_email(driver, email=""):
+        mail = driver.find_element("id_sc_field_email")
+        mail.send_keys(email)
+
+    @staticmethod
+    def mock_test_email(driver):
+        cpf = driver.find_element(By.ID, "id_sc_field_login")
+        cpf.send_keys(cpf_gerado())
+        password = driver.find_element(By.ID, "id_sc_field_pswd")
+        password.send_keys("123456")
+        confirm_password = driver.find_element(By.ID, "id_sc_field_confirm_pswd")
+        confirm_password.send_keys("123456")
+        register = driver.find_element(By.ID, "sc_b_ins_b")
+        register.click()
