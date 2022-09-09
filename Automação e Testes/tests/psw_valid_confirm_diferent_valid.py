@@ -15,17 +15,16 @@ import unittest
 from selenium.webdriver import Firefox
 from nlpage.registration_page import RegisterNl as rng
 
-class TestUnitationNl (unittest.TestCase):
-
+class TestUnitationNl(unittest.TestCase):
+    
     def setUp(self):
         self.driver = Firefox()
         self.driver.get("https://prpi.ifce.edu.br/nl/app_form_add_users/")
 
-    def test_cpf(self):
-
-        rng.write_cpf(self.driver, "805.775.890-24")
-        rng.mock_test_cpf(self.driver)
-
+    def test_password(self):
+        rng.write_password(self.driver, password="123456", confirm_password="456123")
+        rng.mock_test_password(self.driver)
+    
     def tearDown(self):
         self.driver.quit()
 
