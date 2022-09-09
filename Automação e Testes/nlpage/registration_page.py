@@ -11,9 +11,9 @@ try:
     )
 except ImportError:
     raise
-from string import ascii_letters
 from selenium.webdriver.common.by import By
-from support.gerador_cpf import cpf_gerado
+from support.cpf_generator import cpf_generator
+from support.mask_email import mask_generator as mg
 
 class RegisterNl():
 
@@ -34,7 +34,7 @@ class RegisterNl():
         confirm_password = driver.find_element(By.ID, "id_sc_field_confirm_pswd")
         confirm_password.send_keys("123456")
         email = driver.find_element(By.ID, "id_sc_field_email")
-        email.send_keys("jorginho2@kdjdjd.kancsk")
+        email.send_keys(mg())
         register = driver.find_element(By.ID, "sc_b_ins_b")
         register.click()
 
@@ -48,24 +48,28 @@ class RegisterNl():
     @staticmethod
     def mock_test_password(driver):
         cpf = driver.find_element(By.ID, "id_sc_field_login")
-        cpf.send_keys(cpf_gerado())
+        cpf.send_keys(cpf_generator())
         email = driver.find_element(By.ID, "id_sc_field_email")
-        email.send_keys("jorginho2@kdjdjd.kancsk")
+        email.send_keys(mg())
         register = driver.find_element(By.ID, "sc_b_ins_b")
         register.click()
 
     @staticmethod
-    def write_email(driver, email=False):
-        if email:
-            emailx = ""
+    def write_email(driver, white=False, registered=False):
+        if white:
             mail = driver.find_element(By.ID, "id_sc_field_email")
-            mail.send_keys(emailx)
-        
+            mail.send_keys("")
+        if registered:
+            mail = driver.find_element(By.ID, "id_sc_field_email")
+            mail.send_keys("asdfg@asjdh.asdee") 
+            
+        mail = driver.find_element(By.ID, "id_sc_field_email")
+        mail.send_keys(mg())
 
     @staticmethod
     def mock_test_email(driver):
         cpf = driver.find_element(By.ID, "id_sc_field_login")
-        cpf.send_keys(cpf_gerado())
+        cpf.send_keys(cpf_generator())
         password = driver.find_element(By.ID, "id_sc_field_pswd")
         password.send_keys("123456")
         confirm_password = driver.find_element(By.ID, "id_sc_field_confirm_pswd")

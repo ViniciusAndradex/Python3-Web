@@ -21,6 +21,6 @@ while True:
     c -= 1
     index += 1
 
-def cpf_gerado():
+def cpf_generator():
     return new_cpf
     

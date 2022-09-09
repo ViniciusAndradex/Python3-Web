@@ -22,7 +22,7 @@ class TestUnitationNl(unittest.TestCase):
         self.driver.get("https://prpi.ifce.edu.br/nl/app_form_add_users/")
 
     def test_password(self):
-        rng.write_email(self.driver, email="asdfg@asjdh")
+        rng.write_email(self.driver, )
         rng.mock_test_email(self.driver)
     
     def tearDown(self):
