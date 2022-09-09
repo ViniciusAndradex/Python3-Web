@@ -19,14 +19,15 @@ class TestUnitationNl(unittest.TestCase):
     
     def setUp(self):
         self.driver = Firefox()
-        self.driver.get("https://prpi.ifce.edu.br/nl/app_form_add_users/")
+        self.driver.get("https://prpi.ifce.edu.br/nl")
 
     def test_password(self):
-        rng.write_email(self.driver, registered=True)
+        rng.open_cadastro(self.driver)
+        rng.write_email(self.driver)
         rng.mock_test_email(self.driver)
     
-    def tearDown(self):
-        self.driver.quit()
+    # def tearDown(self):
+    #     self.driver.quit()
 
 if __name__ == "__main__":
     unittest.main()

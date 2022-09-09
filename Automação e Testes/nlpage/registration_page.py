@@ -20,7 +20,8 @@ class RegisterNl():
     @staticmethod
     def open_cadastro(driver):
         cad = driver.find_element(By.XPATH, "//div/div/div/a[.='Cadastrar Usuário']")
-        driver.execute_script("arguments[0].click()", cad)
+        cad.click()
+        # driver.execute_script("arguments[0].click()", cad)
     
     @staticmethod
     def write_cpf(driver, cpf=""):
@@ -55,14 +56,21 @@ class RegisterNl():
         register.click()
 
     @staticmethod
-    def write_email(driver, white=False, registered=False):
+    def write_email(driver, white=False, registered=False, invalid=False):
         if white:
             mail = driver.find_element(By.ID, "id_sc_field_email")
             mail.send_keys("")
+            return
         if registered:
             mail = driver.find_element(By.ID, "id_sc_field_email")
             mail.send_keys("asdfg@asjdh.asdee") 
-            
+            return
+
+        if invalid:
+            mail = driver.find_element(By.ID, "id_sc_field_email")
+            mail.send_keys("asrrfg@asjdh") 
+            return
+
         mail = driver.find_element(By.ID, "id_sc_field_email")
         mail.send_keys(mg())
 
