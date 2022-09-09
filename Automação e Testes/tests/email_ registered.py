@@ -22,11 +22,11 @@ class TestUnitationNl(unittest.TestCase):
         self.driver.get("https://prpi.ifce.edu.br/nl/app_form_add_users/")
 
     def test_password(self):
-        rng.write_email(self.driver)
+        rng.write_email(self.driver, email="asdfg@asjdh.asdee")
         rng.mock_test_email(self.driver)
     
-    def tearDown(self):
-        self.driver.quit()
+    # def tearDown(self):
+    #     self.driver.quit()
 
 if __name__ == "__main__":
     unittest.main()

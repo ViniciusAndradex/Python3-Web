@@ -11,6 +11,7 @@ try:
     )
 except ImportError:
     raise
+from string import ascii_letters
 from selenium.webdriver.common.by import By
 from support.gerador_cpf import cpf_gerado
 
@@ -54,9 +55,12 @@ class RegisterNl():
         register.click()
 
     @staticmethod
-    def write_email(driver, email=""):
-        mail = driver.find_element("id_sc_field_email")
-        mail.send_keys(email)
+    def write_email(driver, email=False):
+        if email:
+            emailx = ""
+            mail = driver.find_element(By.ID, "id_sc_field_email")
+            mail.send_keys(emailx)
+        
 
     @staticmethod
     def mock_test_email(driver):
