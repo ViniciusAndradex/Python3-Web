@@ -434,6 +434,61 @@ https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 --------------------------------------------------------------
 
+GGrid:Faz com que filhos adquiram caracteristicas ddiferentes, é uma prpriedade criada para fazer grids (grades).
+
+Configurações:
+grid-template-columns/rows: tamanho1  2;
+-> Resposável pr indicar o numero de columanas e seu tamanho.
+UNIDADE: fr(fragmento) -> proporcional, ou seja, a coluna ira se adequar ao espaço disponivel para ela e não causara overflow.
+repeat(auto-fill(se torna responsivo as telas evitando o overflow), minmax(menor_tamanho, maior_tamanho)) -> indica quantas vezes fazer algo.
+gap -> espaçamento entre as colunas ou tags.
+POUCO USADO:
+grid-column-star/end -> seleciona um item especifico da coluna para estilização
+grid-row-start: -> em caso de querer esconder alguma coluna basta fazer estilização igual para duas colunas proximas e fazer o row da mesma, para apresemtar alguma pode ser utilizado z-index.
+
+OBS: Em caso de não querer utilizar esses valores basta utilizar o span.
+grid-row/column: span 2;
+
+[um] 1fr -> Criasse uma variável, que permite a estilização. (um / quatro maneira de chamar)
+grid-area- inicio linha / fim linha / inicio coluna / fim coluna
+-------------------------------------------------------------------------------
+
+Gap -> Distancia entre linhas e colunas.
+
+gap -> gap: linha coluna;
+
+-------------------------------------------------------------------------------
+Grid-Template: Construção de templates.
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+Configurações:
+grid-template-rows/columns
+subdivisão do template [O que cada item deve fazer]:
+	.grid div:nth-child(1) {
+	    grid-area: header;
+	}
+
+	.grid div:nth-child(2) {
+	    grid-area: nav;
+	}
+
+	.grid div:nth-child(3) {
+	    grid-area: main;
+	}
+
+	.grid div:nth-child(4) {
+	    grid-area: footer;
+	}
+Posicionamento:  grid-template-areas: 'header header {ocupa duas colunas}';
+O header é uma variavel que permite adiconar aonde quisermos a configuração atravez do grid areas.
+
+
+
+
+
+
+
+
 
 
 

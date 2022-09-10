@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
-    gap: 30px;
+    gap: 30px 80px;
 }
 .grid div{
     background: tomato;
@@ -22,9 +22,8 @@ body {
 }
 .grid div:nth-child(5) {
     background-color: aquamarine;
-
     grid-row: span 1;
-    grid-column: span 2;
+    grid-column: span 1;
 }
 
 @media (max-width: 768px) {
