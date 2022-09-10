@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: sans-serif;
+    font-size: 20px;
+}
+
+.grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* essa config de cima permite alinhar no meio o meu conteúdo.*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+    grid-template-rows: 2fr 1fr;
+    gap: 30px;
+}
+.grid div{
+    background: tomato;
+    min-height: 100px;
+}
+.grid div:nth-child(5) {
+    background-color: aquamarine;
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 6; */
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .grid div:nth-child(5) {
+        grid-column: span 1;
+    }
+}
