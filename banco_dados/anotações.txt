@@ -1,0 +1,41 @@
+sqlite3 [HARDCODE]:
+    primeiro devemos criar a conexao ou seja o arquivo que ficaram os dados
+        var = sqlite3.connect('nome do arquivo.db')
+        cursor = conexao.cursor()
+
+        cursor.close()
+        conexao.close()
+
+        BP: Sempre fechar os arquivos no fim da execução.
+    
+    Criar tabelas:
+        OBS: As variaveis em SQL tem tipos primitivos diferentes e portanto tem que tomar cuidado na hora da criação da tabela.
+        cursor.execute('CREATE TABLE IF NOT EXISTS clientes (
+            'id INTEGER PRIMARY KEY AUTOINCREMENT,'
+            'nome TEXT,'
+            'peso REAL'
+            )')
+    
+    Inserir dados:
+        cursor.execute('INSERT INTO tabela (campo, campo) VALUES ("valores", 85.6')
+
+    Executar o comando:
+        conexao.commit()
+
+    Solicitar valores:
+        cursor.execute('SELECT * FROM tabela)
+        cursor.execute('SELECT column, column FROM tabela WHERE condição (utilizar o dict para fazer as solicitações (:var))({'chave': value})')
+    
+    Buscar dados solicitados:
+        cursor.fetchall [Essa função retorna um iteravel, e valor de retorno são tuplas.]
+
+    Deletar itens:
+        cursor.execute('DELETE FROM tabela WHERE condição')
+
+    Atualizar o valor de uma coluna:
+        Utilizando dicionários para evitar problema com injection
+        cursor.execute('UPDATE tabela SET coluna = :chave WHERE id =:id', 
+                {'chave': 'valor', 'id': valor})
+   
+    OBS: Ao final de qualquer operação sempre tem que ser colocado conexao.commit()
+[SQL INJECTION]
