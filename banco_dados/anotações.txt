@@ -1,4 +1,4 @@
-sqlite3 [HARDCODE]:
+sqlite3 / DB BROWSER:
     primeiro devemos criar a conexao ou seja o arquivo que ficaram os dados
         var = sqlite3.connect('nome do arquivo.db')
         cursor = conexao.cursor()
@@ -38,4 +38,15 @@ sqlite3 [HARDCODE]:
                 {'chave': 'valor', 'id': valor})
    
     OBS: Ao final de qualquer operação sempre tem que ser colocado conexao.commit()
+
 [SQL INJECTION]
+
+    UNIQUE: Valor unico dentro da tabela.
+    OR IGNORE: em caso de conflito de dados como um dado repetido para uma coluna que é unique, esse argumento irá simplesmente ignorar e não vai mais reclamar.
+
+    WHERE - LIKE: O like é equivalente ao in do python tornando possível a caça de elementos com nome ou caracteres iguais. Para buscar no começo e fim usamos o '%' -> (f'%{valor}%',))
+
+MariaDB Server [Mysql]:
+    link para instalação completa para por em produção: 
+    mysql-workbench-community.deb
+    mysql-workbench-community-dbgsym_8.0.30-1ubuntu22.04_amd64
