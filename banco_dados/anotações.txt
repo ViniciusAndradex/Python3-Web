@@ -48,5 +48,3 @@ sqlite3 / DB BROWSER:
 
 MariaDB Server [Mysql]:
     link para instalação completa para por em produção: 
-    mysql-workbench-community.deb
-    mysql-workbench-community-dbgsym_8.0.30-1ubuntu22.04_amd64
