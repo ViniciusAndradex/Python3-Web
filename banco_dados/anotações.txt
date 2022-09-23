@@ -46,5 +46,44 @@ sqlite3 / DB BROWSER:
 
     WHERE - LIKE: O like é equivalente ao in do python tornando possível a caça de elementos com nome ou caracteres iguais. Para buscar no começo e fim usamos o '%' -> (f'%{valor}%',))
 
-MariaDB Server [Mysql]:
-    link para instalação completa para por em produção: 
+|MariaDB Server [Mysql]|
+
+CRUD:
+    1: Connect com pymysql;
+        conexao = pymysql.connect(host='10.50.21.37',
+                          user='suporte',
+                          password='v.andrade',
+                          database='clientes',
+                          charset='utf8mb4',
+                          cursorclass=pymysql.cursors.DictCursor)
+
+    2: Utilize um gerenciador de contexto com um cursor para fazer as operações;
+        with conexao.cursor() as cursor:
+            cursor.execute('SELECT * FROM tabela LIMIT valor ORDER BY item DESC')
+            # ORDER BY v DESC, ordena de forma descrescente algo.
+            # ORDER BY v ASC, ordena de forma crescente algo.
+            resultado = cursor.fetchall()
+
+            print(resultado)
+        OBS:
+            Para evitar esquecimentos na hora de fechar o cursor e a conexao utilizaremos o context mangager:
+                from contextlib import contextmanager
+
+                @contextmanager
+                def conecta():
+                    conexao = pymysql.connect(host='',
+                                            user='',
+                                            password='',
+                                            database='',
+                                            charset='',
+                                            cursorclass=pymysql.cursors.DictCursor)
+
+                    try:
+                        yield conexao
+                    finally:
+                        conexao.close()
+                - Está função deve ser alocada com uma with e dentro dela deve estar o cursor para que ambos sejam fechados
+                e utilizados.
+                OBS: A cada ação será aberta uma nova with. 
+    BP: Não é uma boa pratica utilizar apelidos muito curtos.
+    BP: Adicionar sempre um limite na consulta LIMIT
