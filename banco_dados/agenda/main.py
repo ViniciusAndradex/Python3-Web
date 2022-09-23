@@ -38,7 +38,7 @@ class AgendaDB():
         self.conexao.close()
 
 if __name__ == '__main__':
-    agenda = AgendaDB('agenda.db')
+    agenda = AgendaDB('sql/agenda.db')
 
     agenda.listar()
     print('------------')
