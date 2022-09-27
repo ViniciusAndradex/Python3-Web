@@ -1,0 +1,52 @@
+Bases de Dados Relacionais:
+
+Diagrama de Entidade Relacionamento (DER): É uma abstração de parte do sistema e não necessáriamente devemos por todas as colunas do meu produto final por exemplo. 
+    Entidades: São as tabelas
+    Relacionamentos: São as linhas e existem vários tipos.
+
+Entidades: São as tabelas do meu esquema.
+    Atributos: Colunas
+    PrimaryKey (pk): A pk é o atributo que garante uma unissidade dos dados que serão criados.
+        restrições:
+            1. Dado único, uma pk nunca irá se repetir mesmo que um objeto seja excluido com esse valor;
+            2. Não pode ser nulo;
+            3. Só pode exister uma pk por tabela.
+        Best Practices:
+            PK: são utilizados com autoincrement.  
+        surrogate key - Valores que não tem correlação com os dados ao qual ele identifica    
+        natural key - são identificadores que pertencem aos dados e são unicos naquele quesito.
+        OBS: Pode não ser recomendavel no caso de por exemplo ter que modificar os dados.
+        OBS: As pk's podem ser preenchidas manualmente e existem os uuids que são os id's longos não é condenável mas não é tão utilizado.
+
+    Foreign Key (sk): Chave estrangeira, identica que o valor ali vem de outra tabela e normalmente é a pk da outra tabela.
+        serve para identificação dos dados que vem de outro local, oq fica subjetivo.
+
+
+    Composição de pk: essa tabela possui n pk's e n fk's mas na realidade é só uma maneira de indicar o Relacionamento.
+
+Relacionamento (linhas):   
+    crow's foot: notação de linhas para relações.
+
+    Tipos de relação: |1 - 1 || 1 - * || * - *|
+
+    linhas:  | -> representa tem que existir, 2 desse representa que um lado que ter o outro para existir
+             OBS: esse tipo de esquema obrigatório garante uma integridade maior do sistema, mas deixa mais complexo a utilização.
+             ° -> representa que pode não existir.
+             ≡ -> representa muitos e pode ter de acordo com o relacionamento 1 ou nenhum de obrigatorio.
+
+    Relacionamento 1 - 1:  Não muito utilizado pois muitas vezes tudo poder estar em uma tabela só e  podem ter uma relação de obritoriedade ou não a indicação vai de acorda com as linhas de representação.
+
+    Relacionamento 1 - *: Esse relacionamento se dá quando um dado é enviado como FK para outra, com muitos ele indica que de acordo com o relacionamento eu posso obrigatoriamente ter 1 ou nenhum como obrigatório.
+
+    Relacionamento * - *: Esse tipo de relacionamento exige que eu tenha uma tabela auxiliar para essa receba os FK das minhas tabelas que irão se relacionar, essas fk são tratadas como pk e são valores que não podem ser repetir para a integriade do meu banco.
+
+    (n, m) | 1(0)..*(1): n -> cardinalidade, obrigatoriadade de ter ou não um registro
+            m -> quantidade  ou muitos. 
+
+Funcionamento do sql:
+    https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/
+    
+Configurando minhas tabelas:
+    No dbeaver é possível fazer tudo com a interface, portanto, bastar olhar o rodapé para criar e configurar, restrições são feitas em outra janela, mas está tudo alto explicativo.
+
+    Unique-key: valor unico na tabela.
