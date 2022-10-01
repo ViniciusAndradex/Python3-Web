@@ -90,4 +90,36 @@ Comandos especiais [Quando não conhecemos nossa base de dados]:
     describe tabela; descreve as colunas da tabela
 INSERT:
     INSERT INTO tabela VALUES (valores, ),<- Para adicionar mais valores basta por virgula e continuar;
-001-INSERT.sql
+    001-INSERT.sql
+
+SELECT:
+    Seleciona Colunas: 
+        SELECT * (colunas) FROM users (podemos tambem apelidar basta por o nome com um espaço ao final ou 'as' apelido); 
+
+        OBS: Em casos onde estamos selecionando de mais de uma tabela podemos especificar de onde vem a coluna que nós queremos. Exemplo: user.id;
+
+    SELECT BETWEEN - ENTRE VALORES:
+        SELECT col FROM tabela WHERE coluna BETWEEN valor AND valor
+
+    SELECT IN - Seleciona entre os valores enviados:
+        SELECT col FROM tabela WHERE col IN (valores, valores ...); -> Se existir ele apresenta se não ele continua.
+
+    SELECT LIKE - Valor parecido:
+        % -> Indica que eu não me importo com o que está após ou antes dele, esse valor pode ser atribuido da maneira que for necessária.
+        _ -> Faz a busca de acordo com caracteristicas que nós passamo por exemplo: 'j_a__' irá procurar um nome com 5 letras com as caracteristicas que eu especifiquei.
+        SELECT  * FROM users u WHERE col LIKE '%|valor de busca|%';
+
+    SELECT ORDER - ordena o retorno da minha tabela:
+        ASC -> Crescente.
+        DESC -> Decrescente.
+        SELECT cols FROM tabela WHERE tabela BETWEEN valor AND valor ORDER BY cols, ASC/DESC;
+
+    SELECT LIMIT/OFFSET ->| LIMIT- Limita a quantidade de valores que serão retornados | OFFSET - Pula o ponteiro de acordo com a a quantidade indicada nele por exemplo: retorno: id -> 110 e 111 com o OFFSET 2 o retorno seria 112, 113.
+    SELECT cols FROM tabela LIMIT 2 OFFSET 2 ou LIMIT offset,valor limite;
+
+
+-- WHERE: Filtra registros.
+    funciona para todas as funções do CRUD e especifica com o que você quer trabalhar. 
+    Operadores de comparação: >, < e etc. 
+    Operadores lógicos: and, or. 
+

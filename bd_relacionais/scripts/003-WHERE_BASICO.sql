@@ -1,0 +1,1 @@
+SELECT * FROM users u WHERE id > 101 AND created_at > "2022-10-01 09:41:31";
