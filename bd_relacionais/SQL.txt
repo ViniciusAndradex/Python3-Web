@@ -75,3 +75,19 @@ Configurando minhas tabelas:
         updated_at: Datetime / Date -> e indique no padrão a função NOW() on update NOW().
 
         OBS: Para criar esse tipo de tabela seu esquema deve estar com time-zone incluso.
+
+DBEAVER:
+    1. Defina a base de dados padrão.
+    2. Scripts - para comentar basta utilizar o '--'/'#'
+    3. ctrl + enter executa a linha em que você está presente.
+    4. ctrl + s = salvar
+
+Scripts das aulas: https://github.com/luizomf/sql-e-knex/tree/master/sql
+
+Comandos especiais [Quando não conhecemos nossa base de dados]:
+    show tables; Mostra as tabelas que pertencem ao meu schema.
+    use nome do banco; esse comando indica ao meu software com qual banco eu quero trabalhar.
+    describe tabela; descreve as colunas da tabela
+INSERT:
+    INSERT INTO tabela VALUES (valores, ),<- Para adicionar mais valores basta por virgula e continuar;
+001-INSERT.sql
