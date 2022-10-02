@@ -1,0 +1,3 @@
+DELETE FROM users WHERE id BETWEEN 110 and 115;
+
+SELECT * FROM users u WHERE id BETWEEN 110 and 115;

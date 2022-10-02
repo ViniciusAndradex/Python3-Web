@@ -88,9 +88,13 @@ Comandos especiais [Quando não conhecemos nossa base de dados]:
     show tables; Mostra as tabelas que pertencem ao meu schema.
     use nome do banco; esse comando indica ao meu software com qual banco eu quero trabalhar.
     describe tabela; descreve as colunas da tabela
+
 INSERT:
     INSERT INTO tabela VALUES (valores, ),<- Para adicionar mais valores basta por virgula e continuar;
-    001-INSERT.sql
+    
+    INSERT com SELECT - Insere valores em uma tabela usando outra:
+        INSERT INTO tabela (colunas) SELECT colunas... FROM tabela;
+        Podemos adicionar texto no select para o preenchimento com o insert, para isso utilizamos o concat ('', '', coluna e etc);
 
 SELECT:
     Seleciona Colunas: 
@@ -116,8 +120,10 @@ SELECT:
 
     SELECT LIMIT/OFFSET ->| LIMIT- Limita a quantidade de valores que serão retornados | OFFSET - Pula o ponteiro de acordo com a a quantidade indicada nele por exemplo: retorno: id -> 110 e 111 com o OFFSET 2 o retorno seria 112, 113.
     SELECT cols FROM tabela LIMIT 2 OFFSET 2 ou LIMIT offset,valor limite;
-
-
+    BP -> Apagar baseado na PK da tabela.
+    BP -> Sempre utilize o WHERE exceto caso de exclusão total.
+DELETE - apaga dados da tabela:
+    DELETE FROM tabela WHERE indicação do que será excluido.
 -- WHERE: Filtra registros.
     funciona para todas as funções do CRUD e especifica com o que você quer trabalhar. 
     Operadores de comparação: >, < e etc. 
