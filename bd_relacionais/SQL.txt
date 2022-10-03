@@ -147,3 +147,16 @@ JOIN - Relacionamentos:
 RAND e ROUND:
     RAND(): Gera um valor aleatório. Podemos multiplicar o valor.
     ROUND(): Indicamos o número de casas decimais e utilizaremos no curso por cima de rand().
+
+Funções de agregação:
+    
+    SELECT MAX() ...
+    
+    GROUPBY-COUNT:
+        GROUPBY: Agrupa valores iguais, vem antes do order.
+        COUNT(): Função de  agregação COUNT(coluna de contabilização), para apresentar uma coluna com os valores
+    
+    MAX: Retorna o maior valor. 
+    MIN: Retorno o menor valor.
+    AVG: Retona a média dos valores.
+    SUM: Soma dos valores.

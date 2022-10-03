@@ -11,3 +11,9 @@ INNER JOIN users_roles as ur ON u.id = ur.user_id INNER JOIN roles as r ON ur.ro
 
 UPDATE users as u 
 INNER JOIN profiles as p ON p.user_id = u.id SET p.bio = CONCAT(p.bio, ' ATUALIZADO')  WHERE u.first_name = 'Thaddeus'; 
+
+DELETE p FROM  users as u 
+INNER JOIN profiles as p ON p.user_id = u.id WHERE u.first_name = 'xyla'; 
+
+SELECT u.first_name, p.bio  FROM users as u 
+LEFT JOIN profiles as p ON p.user_id = u.id WHERE u.first_name = 'xyla'; 
