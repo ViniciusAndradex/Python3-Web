@@ -7,3 +7,5 @@ SELECT * FROM users u WHERE first_name LIKE 'na%a';
 SELECT id, first_name, email FROM users u WHERE id BETWEEN 100 AND 150 ORDER BY created_at ASC,
 first_name DESC;
 SELECT id, first_name, email FROM users u WHERE id BETWEEN 110 AND 150 ORDER BY id ASC LIMIT 2 OFFSET 2;
+
+ 

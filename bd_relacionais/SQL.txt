@@ -143,3 +143,7 @@ JOIN - Relacionamentos:
         SELECT colunas FROM tabela INNER JOIN tabela de comparação ON colunas de intersecção; 
 
     LEFT/RIGHT JOIN: É um relacionamento onde não necessita de um relacionamento para apresentar ou trabalhar com os dados, porém se não houver alguma intersecção entre as tabelas os dados serão apresentados como NULL.
+
+RAND e ROUND:
+    RAND(): Gera um valor aleatório. Podemos multiplicar o valor.
+    ROUND(): Indicamos o número de casas decimais e utilizaremos no curso por cima de rand().
