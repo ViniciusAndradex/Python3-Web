@@ -111,7 +111,7 @@ SELECT:
     SELECT LIKE - Valor parecido:
         % -> Indica que eu não me importo com o que está após ou antes dele, esse valor pode ser atribuido da maneira que for necessária.
         _ -> Faz a busca de acordo com caracteristicas que nós passamo por exemplo: 'j_a__' irá procurar um nome com 5 letras com as caracteristicas que eu especifiquei.
-        SELECT  * FROM users u WHERE col LIKE '%|valor de busca|%';
+        SELECT  * FROM tabela WHERE col LIKE '%|valor de busca|%';
 
     SELECT ORDER - ordena o retorno da minha tabela:
         ASC -> Crescente.
@@ -138,3 +138,8 @@ UPDATE - Atualiza dados de uma tabela:
     Operadores de comparação: >, < e etc. 
     Operadores lógicos: and, or. 
 
+JOIN - Relacionamentos:
+    INNER JOIN: É um relacionamento onde se um existe o outro também deve existir, se não o valor não é retornado.
+        SELECT colunas FROM tabela INNER JOIN tabela de comparação ON colunas de intersecção; 
+
+    LEFT/RIGHT JOIN: É um relacionamento onde não necessita de um relacionamento para apresentar ou trabalhar com os dados, porém se não houver alguma intersecção entre as tabelas os dados serão apresentados como NULL.
