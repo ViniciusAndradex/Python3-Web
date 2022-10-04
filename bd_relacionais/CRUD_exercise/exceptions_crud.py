@@ -1,0 +1,2 @@
+class TabelaError(Exception):
+    pass

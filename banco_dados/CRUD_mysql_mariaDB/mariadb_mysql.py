@@ -21,7 +21,7 @@ def conecta():
 # Insere 1 DADO
 # with conecta() as conexao:
 #     with conexao.cursor() as cursor:
-#         sql = 'INSERT INTO clientes (nome, sobrenome, idade, peso) Values (%s, %s, %s, %s)'
+        sql = 'INSERT INTO clientes (nome, sobrenome, idade, peso) Values (%s, %s, %s, %s)'
 #         cursor.execute(sql, ('Wilker', 'Alberto', 22, 48))
 
 #         conexao.commit()
