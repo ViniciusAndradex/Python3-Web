@@ -20,14 +20,7 @@ class CRUD():
         with self.conectar() as conecta:
             with conecta.cursor() as cursor:
                 sql = (f'INSERT INTO {tabela} (first_name, last_name, email, password_hash, salary) VALUES (?, ?, ?, ?, ?)')
-
-                dados = list()
-                for valores in args:
-                    dados.append(valores)
-                if dados.__len__ > 1:
-                    cursor.executemany(sql, dados)
-                else:
-                    cursor.execute(sql, dados)
+                cursor.execute(sql, args)
 
                 conecta.commit()
 
