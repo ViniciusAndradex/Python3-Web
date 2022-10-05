@@ -18,7 +18,7 @@ while True:
     print(f'{"-"* 8} MENU {"-" * 8}')
     while True:
         try:
-            item = input('1 - SELECT\n2 - INSERT\n3 - DELETE\n4 - UPDATE\n5- SAIR\nOpcao n°: ')
+            item = input('1 - SELECT\n2 - INSERT\n3 - DELETE\n4 - UPDATE\n5 - SAIR\nOpcao n°: ')
             if isinstance(item, int):
                 raise ValueError('Digite um número')
             else:

@@ -16,11 +16,12 @@ from bd_relacionais.CRUD_exercise.exceptions_crud import TabelaError
 
 crud = CRUD()
 
+
 def config_tabela():
     while True:
         try:
-            tabela_insert = input('Digite a tabela [roles, profiles, users]: ').lower()
-            if tabela_insert != 'roles' and tabela_insert != 'profiles' and tabela_insert != 'users':
+            tabela_insert = input('Digite a tabela [users_roles, profiles, users]: ').lower()
+            if tabela_insert != 'users_roles' and tabela_insert != 'profiles' and tabela_insert != 'users':
                 raise TabelaError('Digite uma tabela Existente')
         except TabelaError as tabela_error:
             print(tabela_error)
@@ -36,13 +37,18 @@ def config_tabela():
         else:
             num_inserts = int(num_inserts)
             break
-    tabela_users(tabela_insert, num_inserts)
+    if tabela_insert == 'users':
+        tabela_users(num_inserts)
+    elif tabela_insert == 'profiles':
+        tabela_profiles(num_inserts)
+    else:
+        tabela_users_roles(num_inserts)
 
 
-def tabela_users(tabela, num_insert):
+def tabela_users(num_insert):
     dados = list()
-    contador = 0
-    while contador < num_insert:
+
+    for c in range(num_insert):
         while True:
             first_name = input('Digite seu primeiro nome: ')
             if first_name == '':
@@ -67,13 +73,60 @@ def tabela_users(tabela, num_insert):
 
         compilacao_dados = (first_name, last_name, email, password, salary)
         dados.append(compilacao_dados)
-        contador += 1
 
-
-    crud.insert(tabela, dados)
+    crud.insert_users(dados)
 
     print('Inserção feita com sucesso!\n\n')
 
 
-def tabela_profiles(tabela, num_insert):
-    pass
+def tabela_profiles(num_insert):
+    dados = list()
+
+    for c in range(num_insert):
+        while True:
+            email = input('Digite o e-mail para a criação do perfil: ')
+            if email == '':
+                print('Digite um email!')
+            else: 
+                break
+        dados.append(email)
+        print('Perfil criado com sucesso!')
+    
+    crud.insert_profiles(dados)
+
+    print('Os perfis solicitados foram cadastrados!\n\n')
+
+
+def tabela_users_roles(num_insert):
+    dados = list()
+
+    for c in range(num_insert):
+        while True:
+            email = input('Digite o e-mail para adicição de uma função: ')
+            if email == '':
+                print('Digite um email!')
+            else: 
+                break
+        while True:
+            try:
+                func = input("""
+    2 - POST
+    3 - PUT
+    4 - DELETE
+    5 - GET
+    - OPCAO: """)
+                if isinstance(func, int):
+                    raise ValueError('Digite um número')
+            except ValueError as value_error:
+                print(value_error)
+            else:
+                func = int(func)
+                break
+
+        dados.append(func, email)
+        print('Função armazenada com SUCESSO!')
+    
+    crud.insert_users_roles(dados)
+
+    print('Função adicionada com SUCESSO!')
+    
