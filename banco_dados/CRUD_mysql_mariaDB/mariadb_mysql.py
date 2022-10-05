@@ -21,7 +21,7 @@ def conecta():
 # Insere 1 DADO
 # with conecta() as conexao:
 #     with conexao.cursor() as cursor:
-        sql = 'INSERT INTO clientes (nome, sobrenome, idade, peso) Values (%s, %s, %s, %s)'
+        # sql = 'INSERT INTO clientes (nome, sobrenome, idade, peso) Values (%s, %s, %s, %s)'
 #         cursor.execute(sql, ('Wilker', 'Alberto', 22, 48))
 
 #         conexao.commit()
@@ -36,7 +36,7 @@ def conecta():
 #             ('Blockaniston', 'Job', 28, 89)
 #         ]
 
-#         # Permite que seja enviado variaos dados ao mesmo tempo envitando execuções repetidas.
+#         # Permite que seja enviado varios dados ao mesmo tempo envitando execuções repetidas.
 #         cursor.executemany(sql, dados)
 
 #         conexao.commit()
