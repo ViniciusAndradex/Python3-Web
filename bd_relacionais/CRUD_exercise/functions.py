@@ -37,6 +37,7 @@ def config_tabela():
         else:
             num_inserts = int(num_inserts)
             break
+    print('\n\n')
     if tabela_insert == 'users':
         tabela_users(num_inserts)
     elif tabela_insert == 'profiles':
@@ -47,6 +48,7 @@ def config_tabela():
 
 def tabela_users(num_insert):
     dados = list()
+    print('-' * 6, ' USERS MENU ', '-' * 6, '\n')
 
     for c in range(num_insert):
         while True:
@@ -82,6 +84,8 @@ def tabela_users(num_insert):
 def tabela_profiles(num_insert):
     dados = list()
 
+    print('-' * 6, ' PROFILES MENU ', '-' * 6, '\n')
+
     for c in range(num_insert):
         while True:
             email = input('Digite o e-mail para a criação do perfil: ')
@@ -100,9 +104,11 @@ def tabela_profiles(num_insert):
 def tabela_users_roles(num_insert):
     dados = list()
 
+    print('-' * 6, ' USERS_ROLES MENU ', '-' * 6, '\n')
+
     for c in range(num_insert):
         while True:
-            email = input('Digite o e-mail para adicição de uma função: ')
+            email = input('Digite o e-mail para adição de uma função: ')
             if email == '':
                 print('Digite um email!')
             else: 
@@ -122,11 +128,13 @@ def tabela_users_roles(num_insert):
             else:
                 func = int(func)
                 break
+        
+        tupla = (func, email)
+        dados.append(tupla)
 
-        dados.append(func, email)
-        print('Função armazenada com SUCESSO!')
+        print('Função armazenada com SUCESSO!\n')
     
     crud.insert_users_roles(dados)
 
-    print('Função adicionada com SUCESSO!')
+    print('Função adicionada com SUCESSO!\n\n')
     

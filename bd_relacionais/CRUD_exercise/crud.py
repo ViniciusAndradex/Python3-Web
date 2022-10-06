@@ -37,7 +37,7 @@ class CRUD():
     def insert_users_roles(self, lista):
         with self.conectar() as conectar:
             with conectar.cursor() as cursor:
-                sql = 'INSERT IGNORE INTO users_roles (user_id, role_id) SELECT id, (SELECT id FROM roles WHERE id = %s) FROM users WHERE email IN (%s)'
+                sql = 'INSERT INTO users_roles (user_id, role_id) SELECT id, (SELECT id FROM roles WHERE id = %s) FROM users WHERE email IN (%s)'
 
                 cursor.executemany(sql, lista)
 

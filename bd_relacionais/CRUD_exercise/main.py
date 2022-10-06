@@ -38,5 +38,5 @@ while True:
     if item == 4:
         pass
     if item == 5:
-        print('OBRIGADO utilizar meu banco de dados.')
+        print('OBRIGADO por utilizar meu banco de dados.')
         break
