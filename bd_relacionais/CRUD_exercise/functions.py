@@ -12,7 +12,7 @@ try:
 except ImportError:
     raise
 from bd_relacionais.CRUD_exercise.crud import CRUD
-from bd_relacionais.CRUD_exercise.exceptions_crud import TabelaError
+from bd_relacionais.CRUD_exercise.exceptions_crud import TabelaError, SelectError
 
 crud = CRUD()
 
@@ -137,4 +137,18 @@ def tabela_users_roles(num_insert):
     crud.insert_users_roles(dados)
 
     print('Função adicionada com SUCESSO!\n\n')
-    
+
+
+def config_select():
+    while True:
+        try:
+            selecao = input('Digite o tipo de select [select_last_5]: ').lower()
+            if selecao != 'select_last_5':
+                raise SelectError('Digite um select existente')
+        except SelectError as select_error:
+            print(select_error)
+        else:
+            break
+
+    if selecao == 'select_last_5':
+        print(crud.select_last_5())

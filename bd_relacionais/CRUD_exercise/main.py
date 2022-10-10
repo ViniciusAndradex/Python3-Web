@@ -30,7 +30,7 @@ while True:
                 break
     
     if item == 1:
-        pass
+        functions.config_select()
     if item == 2:
         functions.config_tabela()
     if item == 3:

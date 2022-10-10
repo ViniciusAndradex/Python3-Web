@@ -1,3 +1,4 @@
+from sqlite3 import Cursor
 import pymysql.cursors
 from contextlib import contextmanager
 
@@ -42,6 +43,17 @@ class CRUD():
                 cursor.executemany(sql, lista)
 
                 conectar.commit()
+
+    def select_last_5(self):
+        with self.conectar as conectar:
+            with conectar.cursor() as cursor:
+
+                sql = 'SELECT * FROM users ORDER BY id DESC LIMIT 5'
+
+                cursor.execute(sql)
+
+                conectar.commit()
+        
         
 
 
