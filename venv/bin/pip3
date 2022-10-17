@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/home/lasic/Área de Trabalho/Python3-Web/venv/bin/python3.9" "$0" "$@"
-' '''
+#!/home/andrade/Documentos/Projetos/Python3-Web/venv/bin/python3.10
 # -*- coding: utf-8 -*-
 import re
 import sys
