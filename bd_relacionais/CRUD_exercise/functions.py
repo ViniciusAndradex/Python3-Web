@@ -150,5 +150,8 @@ def config_select():
         else:
             break
 
-    if selecao == 'select_last_5':
-        print(crud.select_last_5())
+        if selecao == 'select_last_5':
+            crud.select_last_5()
+
+            # for a, b, c in result:
+            #     print(a, b, c)

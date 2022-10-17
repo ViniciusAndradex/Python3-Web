@@ -1,4 +1,3 @@
-from sqlite3 import Cursor
 import pymysql.cursors
 from contextlib import contextmanager
 
@@ -48,14 +47,12 @@ class CRUD():
         with self.conectar as conectar:
             with conectar.cursor() as cursor:
 
-                sql = 'SELECT * FROM users ORDER BY id DESC LIMIT 5'
+                sql = 'SELECT first_name, last_name, id FROM users ORDER BY id DESC LIMIT 5'
 
                 cursor.execute(sql)
 
-                conectar.commit()
-        
-        
+                resultado = cursor.fetchall()
 
-
-
-    
+                for a in resultado:
+                    print(a[0], a[1], a[2])
+                
