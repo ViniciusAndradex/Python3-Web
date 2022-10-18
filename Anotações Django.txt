@@ -74,3 +74,8 @@ DJANGO:
         </h1>
         {%endblock%}
 
+OBS: A tela de erro só deve estar ativiada enquanto em desenvolvimento, quando em produção settings -> DEBUG = False
+
+Home:
+    Criar o app home -> template -> configura a views -> urls do projeto [
+        path('', views.index)] informa importando a views do app.
