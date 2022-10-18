@@ -1,0 +1,76 @@
+Inicializar projeto: 
+    django-admin startproject nome do projeto .
+
+APP = Seção do site.
+
+urls.py: recebem o valor da url de um APP criado
+
+Inicializar servidor para criação dos testes:
+    python manage.py runserver -> Server localhost
+    python manage.py runserver (8888) -> Modifica a porta padrão.
+
+Manage.py: 
+    Arquivo utilizado para a execução de todos os comandos com django.
+
+Inicializar APP:
+    python manage.py startapp [nome=app] -> Outra pasta.
+
+APP:
+    Migrations sincroniza a base de dados.
+    admin -> Registrar a area administrativa da Seção.
+    apps -> Configurações do app.
+    models -> Trabalhar com base de dados
+    tests -> testes automatizados.
+
+Após a criação do app: 
+    devemos ir na settings.py em INSTALLED_APPS['Registrar o path do meu app passando por apps.py/nome da classe']
+
+    Depois urls.py -> urlpartterns[
+        path('app/', include('app.urls')) -> Referencia a pasta app como um todo e busca a urls de sua filha
+    ]
+
+Passo a passo:
+    1. Cria o app
+    2. settings do projeto
+    3. Adiciona o path do app em INSTALLED_APPS ('sobre.apps.SobreConfig',)
+    4. apps do projeto 
+    5. Adiciona path('app/', include('app.urls')) -> path do meu site
+    6. Vai no app e cria o urls dele
+    7. Config do urls:
+            from django.urls import path
+            from . import views
+
+            urlpatterns = [
+                path('teste/', views.teste) -> Continuação do path anterior
+            ]
+    8. Vai em views e cria o corpo as funções do site no caso anterior a função teste
+    9. Exemplo:
+            from django.shortcuts import render
+
+            def teste(request):
+                return render(request, 'sobre/index.html') -> busca o html para renderização da página.
+
+OBS: os.path foi substituido por from pathlib import path -> path.join(...)
+     no django o / pode ser utilizado como concat()
+
+Template global:
+    no projeto criado -> settings -> TEMPLATES -> 'DIRS'
+    Neste arquivo podemos referenciar um html base para todos os meu apps.
+    -- Path.joinpath(BASE_DIR, 'paginas') <- dentro de DIRS
+    O caminho referencia uma pasta global do projeto que contém um html base.
+
+    OBS: Para fazer este arquivo é preciso compreender que utilizamos comandos do django para reservar o espaço do html que queremos por naquel local.
+
+DJANGO:
+    Reserva de espaços: Reserva-> {%block 'titulo'%} Fecha -> {%endblock%}
+    utilizado os blocos, no escopo do app no html reservado fazemos:
+        {%extends 'base.html'%} -> Herda 
+
+        {%block 'titulo'%}Modifiquei o titulo{%endblock%} -> Consume o block 'titulo'
+
+        {%block 'conteudo'%} -> Consume o block 'conteudo'
+        <h1>
+            Eu sou o conteudo
+        </h1>
+        {%endblock%}
+
