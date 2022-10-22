@@ -79,3 +79,20 @@ OBS: A tela de erro só deve estar ativiada enquanto em desenvolvimento, quando 
 Home:
     Criar o app home -> template -> configura a views -> urls do projeto [
         path('', views.index)] informa importando a views do app.
+
+Static: Este arquivo armazenara meus arquivos estaticos que serão utilizados no site, esse arquivo deve ser colocado em templates e depois ser feito o load no html.
+    {% load static %} -> Esta tag carrega no html base esses elementos e permite a utilização dos mesmos no código.
+
+    Para carregar os arquivos em settings do projeto deve estar com estes paths.
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = [Path.joinpath(BASE_DIR / 'templates/static')]
+
+urls -> dinamicamente:
+    em urls.py do app: colocar o parametro name com o mesmo nome da view.
+    {% url 'index' %} -> no local onde indicaremos os botões adicionamos esse bloco como caminho já que ele já foi criado como o 'name='
+
+arquivos parciais [Modularização de html]:
+    Tem como objetivo evitar repetição de código.
+    1º Criar uma pasta no template
+    2º Os arquivos de html criados devem ter um _ a sua frente pois são arquivos parciais
+    3º Devemos substituir os locais por {% include 'path' %}
